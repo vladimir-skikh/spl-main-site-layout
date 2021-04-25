@@ -1,0 +1,98 @@
+.main {
+    margin-top: 60px;
+    width: 100%;
+    &-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0 35px;
+        &__image {
+            width: 100%;
+            height: auto;
+            -o-object-fit: contain;
+               object-fit: contain;
+            
+            &-block {
+               width: 191px; 
+               margin-bottom: 20px;
+            }
+        }
+        &__text {
+            margin: 0 0 20px;
+            padding: 0;
+            width: 100%;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            &-block {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__title {
+            text-align: center;
+            font-weight: normal;
+            font-size: 3.6rem;
+            line-height: 4.2rem;
+            margin: 0 0 22px;
+        }
+    }
+}
+
+@media (min-width: 860px) {
+    .main {
+        margin-top: 110px;
+        &-screen {
+            min-height: calc(100vh - 110px);
+            padding-top: 60px;
+            &__image {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                -o-object-fit: contain;
+                   object-fit: contain;
+                &-block {
+                   width: 100%; 
+                   margin-bottom: 30px;
+                   display: flex;
+                   justify-content: center;
+                }
+            }
+            &__title {
+                font-size: 5.8rem;
+                line-height: 6.2rem;
+            }
+            &__text {
+                font-size: 1.8rem;
+                line-height: 2rem;
+                margin-bottom: 25px;
+                &-block {
+                    max-width: 520px;
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        &-screen {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-top: 175px;
+            &__title {
+                font-size: 7.2rem;
+                line-height: 8.4rem;
+                margin: 0 0 22px;
+            }
+            &__image {
+                max-width: unset;
+            }
+        }
+    }
+}

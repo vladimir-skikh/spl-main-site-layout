@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPL</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="mobile-menu">
-            <input type="checkbox" class="mobile-menu__checkbox" id="menu-checkbox">
+            <input type="checkbox" class="mobile-menu__checkbox" id="menu-checkbox" title="Открыть боковое меню">
             <label for="menu-checkbox" class="mobile-menu__input-block">
                 <span class="mobile-menu__button"></span>
             </label>
             <div class="mobile-menu__background"></div>
-            <div class="mobile-menu__content">
+            <nav class="mobile-menu__content">
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__list-item">
                         <a class="mobile-menu__link menu-link" href="#">
@@ -47,10 +47,10 @@
                 </ul>
                 <div class="mobile-menu__contacts">
                     <ul class="mobile-menu__contacts-list">
-                        <li class="mobile-menu__contacts-item contacts-item_phone">
+                        <li class="mobile-menu__contacts-item contacts-item contacts-item_phone">
                             <a class="mobile-menu__contacts-link" href="tel:+79999999999">8 999 999 99 99</a>
                         </li>
-                        <li class="mobile-menu__contacts-item contacts-item_email">
+                        <li class="mobile-menu__contacts-item contacts-item contacts-item_email">
                             <a class="mobile-menu__contacts-link" href="mailto:contact@mail.ru">contact@mail.ru</a>
                         </li>
                     </ul>
@@ -66,14 +66,274 @@
                         </a>
                     </div>
                 </div>
+            </nav>
+        </div>
+        <div class="wrapper header__wrapper">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <img class="header__logo-image" src="./src/img/logo-white.svg" alt="" width="76" height="38">
+                </div>
+                <nav class="header__menu-nav menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item menu__list-item_active">
+                            <a href="#" class="menu__link menu-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link menu-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link menu-link">
+                                Наши проекты
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link menu-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link menu-link">
+                                Обратная связь
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="header__logo">
-            <img src="./src/img/logo-white.jpg" alt="" width="76" height="38">
-        </div>
     </header>
-    <main>
-
+    <main class="main">
+        <div class="wrapper">
+            <section class="main-screen">
+                <div class="main-screen__image-block">
+                    <img src="/src/img/main-illustration.jpg" alt="Проектнаz лаборатория SPL" class="main-screen__image">
+                </div>
+                <div class="main-screen__text-block">
+                    <h1 class="main-screen__title">
+                        Заголовок главный
+                    </h1>
+                    <p class="main-screen__text">
+                        Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям
+                    </p>
+                    <a href="#" class="main-screen__link link_button">Подробнее</a>
+                </div>
+            </section>
+        </div>
+        <section class="projects">
+            <div class="projects__header">
+                <h2 class="section-title projects__header-title">
+                    Наши проекты
+                </h2>
+                <ul class="projects__states-list">
+                    <li class="projects__states-item" data-state="ready">
+                        <span class="projects__states-item__text projects__states-item__text_active">
+                            Готовые
+                        </span>
+                    </li>
+                    <li class="projects__states-item" data-state="in-work">
+                        <span class="projects__states-item__text">
+                            В работе
+                        </span>
+                    </li>
+                    <li class="projects__states-item" data-state="future">
+                        <span class="projects__states-item__text">
+                            Будущие
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects__list-block">
+                <ul class="projects__list">
+                    <li class="projects-card projects__list-item">
+                        <div class="projects-card__miniature">
+                            <a href="#" class="projects-card__miniature-link">
+                                <img class="projects-card__miniature-image" src="./src/img/project-miniature.jpg" alt="Проект 1">
+                            </a>
+                        </div>
+                        <a class="projects-card__text" href="#">
+                            <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                            <p class="projects-card__text-description">
+                                Разнообразный и богатый опыт говорит нам,
+                                что граница обучения кадров выявляет срочную потребность стандартных подходов
+                            </p>
+                        </a>
+                    </li>
+                    <li class="projects-card projects__list-item">
+                        <div class="projects-card__miniature">
+                            <a href="#" class="projects-card__miniature-link">
+                                <img class="projects-card__miniature-image" src="./src/img/project-miniature.jpg" alt="Проект 1">
+                            </a>
+                        </div>
+                        <a class="projects-card__text" href="#">
+                            <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                            <p class="projects-card__text-description">
+                                Разнообразный и богатый опыт говорит нам,
+                                что граница обучения кадров выявляет срочную потребность стандартных подходов
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects__footer">
+                <a href="#" class="projects__footer-link link_button">Все проекты</a>
+            </div>
+        </section>
+        <div class="wrapper wrapper_colored">
+            <section class="news">
+                <h2 class="section-title">
+                    Наши проекты
+                </h2>
+                <ul class="news-list">
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                            <span class="news-card__text">
+                                <span class="news-card__hashtag">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                            <span class="news-card__text">
+                                <span class="news-card__hashtag">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                            <span class="news-card__text">
+                                <span class="news-card__hashtag">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                            <span class="news-card__text">
+                                <span class="news-card__hashtag">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                            <span class="news-card__text">
+                                <span class="news-card__hashtag">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="news__footer-link link_button">Все проекты</a>
+            </section>
+            <section class="infographic">
+                <ul class="infographic-list">
+                    <li class="infographic-item">
+                        <img src="./src/img/infographic-team.svg" class="infographic-item__image">
+                        <span class="infographic-item__title">БОЛЬШАЯ КОМАНДА</span>
+                        <p class="infographic-item__text">Над различными проектами трудится множество студентов, воплощая идеи в конкретный продукт</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="feedback">
+            <div class="wrapper wrapper_center">
+                <h2 class="section-title">
+                    Обратная связь
+                </h2>
+                <p class="feedback__description">
+                    Многие думают, что Lorem Ipsum - взятый с потолка псевдо латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад.
+                </p>
+                <form class="feedback__form form">
+                    <div class="feedback__form-group form-group">
+                        <input class="feedback__form-group__input form-group__input" type="text" name="name" id="feedback_name" placeholder="Ваше имя">
+                    </div>
+                    <div class="feedback__form-group form-group">
+                        <input class="feedback__form-group__input form-group__input" type="email" name="email" id="feedback_email" placeholder="Ваш email">
+                    </div>
+                    <div class="feedback__form-group form-group">
+                        <input class="feedback__form-group__input form-group__input" type="text" name="select" id="feedback_select" placeholder="здесь будет селект">
+                    </div>
+                    <div class="feedback__form-group form-group">
+                        <textarea class="feedback__form-group__textarea form-group__textarea" name="comment" id="feedback__comment" rows="5" placeholder="Напишите немного о том, чем вы хотите заниматься"></textarea>
+                    </div>
+                    <div class="feedback__form-group form-group">
+                        <button type="submit" class="feedback__form-group__submit form-group__submit button">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
 

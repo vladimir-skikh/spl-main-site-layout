@@ -1,0 +1,127 @@
+// ссылки на соц сети
+.social-link {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+// кнопка - ссылка
+.link_button {
+    color: $white;
+    padding: 10px 30px;
+    background-color: $blue-main;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    &:hover {
+        background-color: $blue-main-hover;
+    }
+    &:focus {
+        background-color: $blue-main-focus;
+    }
+}
+
+// Контакты
+.contacts-item {
+    padding-left: 25px;
+    position: relative;
+    &_phone::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        background: url('/src/img/phone-icon.svg') no-repeat center;
+    }
+    &_email::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        background: url('/src/img/email-icon.svg') no-repeat center;
+    }
+}
+
+// стили для формы
+.form {
+    &-group {
+        &__input {
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid $gray-opacity-05;
+            padding: 10px;
+            color: $black-main;
+            border-radius: 10px;
+            background-color: $white;
+            &:focus {
+                outline: none;
+                border-color: $blue-main;
+            }
+            &::-webkit-input-placeholder {
+                color: $gray-opacity-05;
+            }
+            &::-moz-placeholder {
+                color: $gray-opacity-05;
+            }
+            &:-ms-input-placeholder {
+                color: $gray-opacity-05;
+            }
+            &::-ms-input-placeholder {
+                color: $gray-opacity-05;
+            }
+            &::placeholder {
+                color: $gray-opacity-05;
+            }
+        }
+        &__textarea {
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid $gray-opacity-05;
+            padding: 10px;
+            color: $black-main;
+            border-radius: 10px;
+            background-color: $white;
+            &:focus {
+                outline: none;
+                border-color: $blue-main;
+            }
+            &::-webkit-input-placeholder {
+                color: $gray-opacity-05;
+            }
+            &::-moz-placeholder {
+                color: $gray-opacity-05;
+            }
+            &:-ms-input-placeholder {
+                color: $gray-opacity-05;
+            }
+            &::-ms-input-placeholder {
+                color: $gray-opacity-05;
+            }
+            &::placeholder {
+                color: $gray-opacity-05;
+            }
+        }
+    }
+}
+
+// стили для кнопки
+.button {
+    color: $white;
+    padding: 10px 25px;
+    background-color: $blue-main;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 10px;
+    &:hover {
+        background-color: $blue-main-hover;
+    }
+    &:focus {
+        outline: none;
+        background-color: $blue-main-focus;
+    }
+}

@@ -1,0 +1,91 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    &-list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    &-card {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px $black-box-shadow;
+        &__link {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            color: inherit;
+            &:focus {
+                outline: none;
+            }
+        }
+        &__image {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 10px;
+            -o-object-fit: contain;
+               object-fit: contain;
+            -o-object-position: center;
+               object-position: center;
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__hashtag {
+            display: block;
+            background-color: $blue-main;
+            color: $white;
+            border-radius: 10px;
+            padding: 1px 5px;
+            align-self: flex-start;
+        }
+        &__title {
+            display: block;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            font-weight: bold;
+        }
+        &__meta {
+            display: flex;
+            justify-content: flex-end;
+            &__read-more {
+                display: none;
+                position: relative;
+                color: $gray-opacity-05;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                padding-right: 25px;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: url('../img/arrow-right.svg');
+                }
+            }
+            &__date {
+                display: block;
+                color: $gray-opacity-05;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+    &__footer {
+        
+
+    }
+}

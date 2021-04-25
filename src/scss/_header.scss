@@ -1,0 +1,240 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: $white-blue-main;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    &__logo {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+    &__menu {
+        display: flex;
+    }
+}
+// мобильное меню
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    width: 23px;
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__input-block {
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background-color: $black-main;
+        z-index: 4;
+    }
+    &__button::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        width: 100%;
+        height: 1px;
+        background-color: $black-main;
+        transition: 0.3s;
+    }
+    &__button::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 1px;
+        background-color: $black-main;
+        transition: 0.3s;
+    }
+    &__background {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: $black-background;
+        z-index: -1;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: -210vw;
+        margin: 0;
+        padding: 60px 10px 25px;
+        width: 206px;
+        height: 100vh;
+        background-color: $white-blue-main;
+        z-index: 3;
+        transform: translateX(110wv);
+        transition: 0.5s;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__list-item {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        margin-bottom: 15px;
+    }
+    &__contacts {
+        &-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        &-item {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            margin-bottom: 15px;
+        }
+        &-link {
+            text-decoration: none;
+            color: inherit;
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+        }
+        &__social-links {
+            display: flex;
+        }
+    }
+    
+    // стили для открытого меню
+    &__checkbox:checked ~ &__input-block > &__button {
+        background-color: transparent;
+    }
+    &__checkbox:checked ~ &__input-block > &__button::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    &__checkbox:checked ~ &__input-block > &__button::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    &__checkbox:checked ~ &__content {
+        transform: translateX(210vw);
+    }
+    &__checkbox:checked ~ &__background {
+        -webkit-animation: opacity-in 0.3s ease;
+                animation: opacity-in 0.3s ease;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        display: block;
+        z-index: 2;
+    }
+}
+
+// ссылки в меню хедера
+.menu-link {
+    text-decoration: none;
+    color: inherit;
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.menu {
+    display: none;
+    width: 100%;
+    max-width: 580px;
+    &__list {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        &-item {
+            padding: 17px 20px 0;
+            height: 100%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            &_active {
+                position: relative;
+                color: $blue-main;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 5px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    background-color: $blue-main;
+                }
+            }
+        }
+    }
+    &__link {
+        &:hover, &:focus {
+            color: $blue-main;
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media (min-width: 860px) {
+    .header {
+        height: 110px;
+        padding-top: 15px;
+        background-color: $white;
+        padding-bottom: 0;
+        &__menu {
+            height: 100%;
+            display: flex;
+            border-bottom: 1px solid $gray-opacity-05;
+        }
+        &__wrapper {
+            height: 100%;
+        }
+        &__logo {
+            flex-grow: 0;
+            width: 95px;
+            height: 48px;
+            margin-right: 100px;
+            &-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
