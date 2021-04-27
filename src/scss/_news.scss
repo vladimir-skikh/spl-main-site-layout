@@ -175,6 +175,7 @@
             color: $gray-opacity-05;
             position: relative;
             border-radius: 0;
+            z-index: -1;
             &::after {
                 content: '';
                 display: block;

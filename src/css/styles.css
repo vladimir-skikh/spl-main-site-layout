@@ -145,6 +145,10 @@
   background-color: #1641A4;
 }
 
+.fixed {
+  overflow: hidden;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1022,6 +1026,7 @@
     color: rgba(43, 44, 52, 0.5);
     position: relative;
     border-radius: 0;
+    z-index: -1;
   }
   .news__footer-link::after {
     content: '';
