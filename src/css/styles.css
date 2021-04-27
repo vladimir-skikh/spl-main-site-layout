@@ -1,6 +1,19 @@
 .social-link {
   margin-right: 10px;
   text-decoration: none;
+  outline: none;
+}
+
+.social-link__image-path {
+  fill: #285BD4;
+}
+
+.social-link:hover .social-link__image-path {
+  fill: #1949BA;
+}
+
+.social-link:focus .social-link__image-path {
+  fill: #1641A4;
 }
 
 .link_button {
@@ -17,11 +30,11 @@
 }
 
 .link_button:hover {
-  background-color: #285BD4;
+  background-color: #1949BA;
 }
 
 .link_button:focus {
-  background-color: #285BD4;
+  background-color: #1641A4;
 }
 
 .contacts-item {
@@ -124,12 +137,12 @@
 }
 
 .button:hover {
-  background-color: #285BD4;
+  background-color: #1949BA;
 }
 
 .button:focus {
   outline: none;
-  background-color: #285BD4;
+  background-color: #1641A4;
 }
 
 .header {
@@ -873,6 +886,17 @@
   padding: 1px 5px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  text-decoration: none;
+  outline: none;
+  align-self: flex-start;
+}
+
+.news-card__hashtag:hover {
+  background-color: #1949BA;
+}
+
+.news-card__hashtag:focus {
+  background-color: #1641A4;
 }
 
 .news-card__title {
@@ -1132,8 +1156,25 @@
   background-color: #F8F9FA;
 }
 
+.feedback__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .feedback__description {
+  margin: 0;
+  padding: 0;
   font-weight: 300;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   margin-bottom: 10px;
 }
@@ -1170,6 +1211,135 @@
 
 .feedback__form-group__submit {
   margin-bottom: 15px;
+}
+
+@media (min-width: 860px) {
+  .feedback__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback__description {
+    margin-bottom: 0;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 520px;
+    margin-right: 60px;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .feedback__form {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .feedback__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback__form_left {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .feedback__form_right {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+  .feedback__form-group {
+    margin-bottom: 25px;
+  }
+  .feedback__form-group__textarea {
+    height: 220px;
+  }
+}
+
+.footer {
+  height: 110px;
+  display: none;
+}
+
+.footer__wrapper {
+  border-top: 1px solid #2B2C34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+}
+
+.footer__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__social-links__link {
+  margin-right: 0;
+}
+
+.footer__logo {
+  margin-bottom: 10px;
+}
+
+.footer__links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__links-list__item {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-bottom: 7px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__link:hover {
+  color: #060607;
+  text-decoration: underline;
+}
+
+.footer__link:focus {
+  outline: none;
+  color: #000000;
+  text-decoration: underline;
+}
+
+@media (min-width: 860px) {
+  .footer {
+    display: block;
+  }
 }
 
 @font-face {
@@ -1259,6 +1429,13 @@ html, body {
   .wrapper_padding-15 {
     padding-right: 50px;
     padding-left: 50px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper_padding-15 {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 

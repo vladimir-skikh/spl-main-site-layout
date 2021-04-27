@@ -6,6 +6,7 @@
 @import './_news.scss';
 @import './_infographic.scss';
 @import './_feedback.scss';
+@import './_footer.scss';
 
 @font-face {
     font-family: "Roboto";
@@ -16,7 +17,6 @@
         url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"),
         url("../fonts/Roboto/Roboto-LightItalic.ttf") format("ttf"),
         url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
-
     font-weight: normal;
     font-style: normal;
     font-display: fallback;
@@ -88,6 +88,14 @@ html, body {
         &_padding-15 {
             padding-right: 50px;
             padding-left: 50px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .wrapper {
+        &_padding-15 {
+            padding-right: 0;
+            padding-left: 0;
         }
     }
 }

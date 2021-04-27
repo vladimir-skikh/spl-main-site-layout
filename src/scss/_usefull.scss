@@ -2,6 +2,16 @@
 .social-link {
     margin-right: 10px;
     text-decoration: none;
+    outline: none;
+    &__image-path {
+        fill: $blue-main;
+    }
+    &:hover &__image-path {
+        fill: $blue-main-hover  ;
+    }
+    &:focus &__image-path {
+        fill: $blue-main-focus;
+    }
 }
 
 // кнопка - ссылка
