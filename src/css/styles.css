@@ -1002,6 +1002,7 @@
     padding-right: 25px;
     font-size: 1.4rem;
     line-height: 1.8rem;
+    z-index: -1;
   }
   .news-card__meta__read-more::after {
     content: '';
