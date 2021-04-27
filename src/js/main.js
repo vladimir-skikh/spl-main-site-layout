@@ -35,10 +35,14 @@ const handleTouchMove = (evt) => {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
             /* left swipe */ 
-            mobile_menu_button.cheсked = false
+            if (mobile_menu_button.checked) {
+                mobile_menu_button.click();
+            }
         } else {
             /* right swipe */
-            mobile_menu_button.cheсked = true
+            if (!mobile_menu_button.checked) {
+                mobile_menu_button.click();
+            }
         }                       
     } 
 
