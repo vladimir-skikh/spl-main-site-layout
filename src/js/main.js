@@ -7,9 +7,6 @@ mobile_menu_button.addEventListener('change', (e) => {
 
 
 // отслеживание событий свайпа для меню
-document.addEventListener('touchstart', handleTouchStart, false);        
-document.addEventListener('touchmove', handleTouchMove, false);
-
 var xDown = null;                                                        
 var yDown = null;
 
@@ -49,3 +46,6 @@ const handleTouchMove = (evt) => {
     xDown = null;
     yDown = null;                                             
 };
+
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
