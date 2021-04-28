@@ -1,10 +1,4 @@
 let mobile_menu_button = document.querySelector('#menu-checkbox');
-let body = document.querySelector('body');
-
-mobile_menu_button.addEventListener('change', (e) => {
-    body.classList.toggle('fixed');
-});
-
 
 // отслеживание событий свайпа для меню
 var xDown = null;                                                        
@@ -26,11 +20,11 @@ const handleTouchMove = (evt) => {
         return;
     }
 
-    var xUp = evt.touches[0].clientX;                                    
-    var yUp = evt.touches[0].clientY;
+    const xUp = evt.touches[0].clientX;                                    
+    const yUp = evt.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
@@ -46,7 +40,6 @@ const handleTouchMove = (evt) => {
         }                       
     } 
 
-    /* reset values */
     xDown = null;
     yDown = null;                                             
 };

@@ -145,10 +145,6 @@
   background-color: #1641A4;
 }
 
-.fixed {
-  overflow: hidden;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
