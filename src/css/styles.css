@@ -194,6 +194,9 @@
   width: 1px;
   height: 1px;
   overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .mobile-menu__checkbox:focus {
