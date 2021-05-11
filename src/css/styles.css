@@ -145,10 +145,6 @@
   background-color: #1641A4;
 }
 
-.fixed {
-  overflow: hidden;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,9 +162,7 @@
 }
 
 .header__logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,12 +438,9 @@
     height: 100%;
   }
   .header__logo {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    margin: 0 100px 0 0;
     width: 95px;
     height: 48px;
-    margin-right: 100px;
   }
   .header__logo-image {
     width: 100%;
@@ -708,13 +699,13 @@
   max-width: 213px;
 }
 
-.projects-card__miniature {
+.projects-card__cover {
   width: 193px;
   border-radius: 10px;
   margin-bottom: 5px;
 }
 
-.projects-card__miniature-link {
+.projects-card__cover-link {
   display: block;
   width: 100%;
   height: 100%;
@@ -723,9 +714,9 @@
   text-decoration: none;
 }
 
-.projects-card__miniature-image {
-  width: auto;
-  height: 100%;
+.projects-card__cover-image {
+  width: 100%;
+  height: auto;
 }
 
 .projects-card__text {
@@ -752,6 +743,9 @@
 }
 
 @media (min-width: 860px) {
+  .projects__header {
+    margin-bottom: 60px;
+  }
   .projects__states-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -785,6 +779,87 @@
   }
   .projects__states-item:not(:last-child) {
     margin-right: 0;
+  }
+  .projects__list {
+    width: 100%;
+  }
+  .projects__list-block {
+    width: 100%;
+    max-width: 1290px;
+    padding: 0 50px 0 50px;
+    margin: 0 auto 40px;
+  }
+  .projects-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+    max-width: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .projects-card__cover {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+    width: unset;
+    border-radius: 0px;
+    margin-bottom: 0;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .projects-card__cover-link {
+    line-height: calc(100% - 3px);
+    overflow: hidden;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .projects-card__text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects-card__text-title {
+    margin-bottom: 25px;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+  }
+  .projects-card__text-description {
+    line-height: 1.2rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .projects__footer {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .projects__list-block {
+    padding: 0;
   }
 }
 
@@ -1138,6 +1213,8 @@
   }
   .infographic-item__image {
     margin-bottom: 35px;
+    width: 100px;
+    height: 100px;
   }
   .infographic-item__title {
     font-size: 2rem;
@@ -1348,6 +1425,30 @@
   .footer {
     display: block;
   }
+}
+
+.bv_mainselect {
+  width: 100%;
+  padding: 0;
+}
+
+.bv_atual {
+  border: 1px solid rgba(43, 44, 52, 0.5);
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(43, 44, 52, 0.7);
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.bv_ul_inner {
+  border: 1px solid rgba(43, 44, 52, 0.5);
+  border-radius: 10px;
+}
+
+.bv_ul_inner li input {
+  color: rgba(43, 44, 52, 0.7);
+  font-size: 13px;
 }
 
 @font-face {

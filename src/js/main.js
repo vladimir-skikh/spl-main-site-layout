@@ -1,10 +1,4 @@
 let mobile_menu_button = document.querySelector('#menu-checkbox');
-let body = document.querySelector('body');
-
-mobile_menu_button.addEventListener('change', (e) => {
-    body.classList.toggle('fixed');
-});
-
 
 // отслеживание событий свайпа для меню
 var xDown = null;                                                        
@@ -26,30 +20,55 @@ const handleTouchMove = (evt) => {
         return;
     }
 
-    var xUp = evt.touches[0].clientX;                                    
-    var yUp = evt.touches[0].clientY;
+    const xUp = evt.touches[0].clientX;                                    
+    const yUp = evt.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-            /* left swipe */ 
+            /* свайп влево */ 
             if (mobile_menu_button.checked) {
-                mobile_menu_button.click();
+                // имитируем событие клика на чекбокс для открытия/закрытия мобильного меню
+                mobile_menu_button.click(); 
             }
         } else {
-            /* right swipe */
+            /* свайп вправо */
             if (!mobile_menu_button.checked) {
-                mobile_menu_button.click();
+                // имитируем событие клика на чекбокс для открытия/закрытия мобильного меню
+                mobile_menu_button.click(); 
             }
         }                       
     } 
 
-    /* reset values */
     xDown = null;
     yDown = null;                                             
 };
 
 document.addEventListener('touchstart', handleTouchStart, false);        
 document.addEventListener('touchmove', handleTouchMove, false);
+
+// события после загрузки контента
+document.addEventListener('DOMContentLoaded', (e) => {
+    
+    // Изменение активной кнопки со стадией проекта
+    const project_states_buttons = document.querySelectorAll('.projects__states-item__text');
+    project_states_buttons.forEach( button => {
+        button.addEventListener('click', (e) => {
+            if (!e.currentTarget.classList.contains('projects__states-item__text_active')) {
+                project_states_buttons.forEach(button => {
+                    button.classList.remove('projects__states-item__text_active');
+                });
+                e.currentTarget.classList.add('projects__states-item__text_active');
+            }
+        });
+    });
+});
+
+const projects_select = new BVSelect({
+    selector: "#projects_select",
+    searchbox: true,
+    placeholder: "Выберете проект",
+    search_placeholder: "Проект..."
+});

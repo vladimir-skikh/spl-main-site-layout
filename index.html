@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPL</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" href="src/img/icon.ico" type="image/icon type">
+
+    <link rel="stylesheet" href="src/css/bvselect.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
     <header class="header">
+
+        <!-- Mobile menu -->
         <div class="mobile-menu">
             <input type="checkbox" class="mobile-menu__checkbox" id="menu-checkbox" title="Открыть боковое меню">
             <label for="menu-checkbox" class="mobile-menu__input-block">
@@ -75,6 +81,9 @@
                 </div>
             </nav>
         </div>
+        <!-- END Mobile menu -->
+
+        <!-- Main menu -->
         <div class="wrapper wrapper_padding-15 header__wrapper">
             <div class="header__menu">
                 <div class="header__logo">
@@ -111,8 +120,12 @@
                 </nav>
             </div>
         </div>
+        <!-- END Main menu -->
+
     </header>
     <main class="main">
+
+        <!-- Homescreen section -->
         <div class="wrapper wrapper_padding-15">
             <section class="main-screen">
                 <div class="main-screen__image-block">
@@ -129,6 +142,9 @@
                 </div>
             </section>
         </div>
+        <!-- END Homescreen section -->
+
+        <!-- Projects section -->
         <section class="projects">
             <div class="projects__header">
                 <h2 class="section-title projects__header-title">
@@ -168,7 +184,7 @@
                             </p>
                         </a>
                     </li>
-                    <li class="projects-card projects__list-item">
+                    <!--<li class="projects-card projects__list-item">
                         <div class="projects-card__miniature">
                             <a href="#" class="projects-card__miniature-link">
                                 <img class="projects-card__miniature-image" src="src/img/project-miniature.jpg" alt="Проект 1">
@@ -181,13 +197,16 @@
                                 что граница обучения кадров выявляет срочную потребность стандартных подходов
                             </p>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <div class="projects__footer">
                 <a href="#" class="projects__footer-link link_button">Все проекты</a>
             </div>
         </section>
+        <!-- END Projects section -->
+
+        <!-- News section -->
         <div class="wrapper wrapper_padding-15">
             <section class="news">
                 <h2 class="section-title">
@@ -354,6 +373,9 @@
                 <a href="#" class="link_button news__footer-link">Все новости</a>
             </section>
         </div>
+        <!-- END News section -->
+
+        <!-- Infographic section -->
         <section class="wrapper_padding-15 infographic">
             <div class="wrapper wrapper_row">
                 <ul class="infographic-list">
@@ -380,6 +402,9 @@
                 </ul>
             </div>
         </section>
+        <!-- END Infographic section -->
+
+        <!-- Feedback section -->
         <section class="feedback wrapper_padding-15">
             <div class="wrapper wrapper_center">
                 <h2 class="section-title">
@@ -398,7 +423,13 @@
                                 <input class="feedback__form-group__input form-group__input" type="email" name="email" id="feedback_email" placeholder="Ваш email">
                             </div>
                             <div class="feedback__form-group form-group">
-                                <input class="feedback__form-group__input form-group__input" type="text" name="select" id="feedback_select" placeholder="здесь будет селект">
+                                <select id="projects_select" class="feedback__form-group__input form-group__input" multiple>
+                                    <option value="jquery" selected>jQuery</option>
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="angular">Angular</option>
+                                    <option value="react">React</option>
+                                    <option value="vue">Vue.js</option>
+                                </select>
                             </div>
                         </div>
                         <div class="feedback__form_right">
@@ -415,6 +446,8 @@
                 </div>
             </div>
         </section>
+        <!-- END Feedback section -->
+
     </main>
     <footer class="footer">
         <div class="wrapper wrapper_padding-15">
@@ -479,6 +512,7 @@
             </div>
         </div>
     </footer>
+    <script src="src/js/bvselect.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>

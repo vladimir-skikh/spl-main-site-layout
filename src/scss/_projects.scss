@@ -71,7 +71,7 @@
         box-shadow: 0px 0px 20px $black-box-shadow;
         border-radius: 10px;
         max-width: 213px;
-        &__miniature {
+        &__cover {
             width: 193px;
             border-radius: 10px;
             margin-bottom: 5px;
@@ -84,8 +84,8 @@
                 text-decoration: none;
             }
             &-image {
-                width: auto;
-                height: 100%;
+                width: 100%;
+                height: auto;
             }
         }
         &__text {
@@ -113,6 +113,9 @@
 
 @media (min-width: 860px) {
     .projects {
+        &__header {
+            margin-bottom: 60px;
+        }
         &__states {
             &-list {
                 display: flex;
@@ -143,6 +146,70 @@
                 &:not(:last-child) {
                     margin-right: 0;
                 }
+            }
+        }
+        &__list {
+            width: 100%;
+            &-block {
+                width: 100%;
+                max-width: 1290px;
+                padding: 0 50px 0 50px;
+                margin: 0 auto 40px;
+            }
+        }
+        &-card {
+            flex-direction: row;
+            padding: 0;
+            align-items: flex-start;
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0px;
+            max-width: unset;
+            justify-content: space-between;
+            &__cover {
+                flex-basis: 42%;
+                width: unset;
+                border-radius: 0px;
+                margin-bottom: 0;
+                background-color: transparent;
+                box-shadow: 0px 0px 20px $black-box-shadow;
+                border-radius: 10px;
+                &-link {
+                    line-height: calc(100% - 3px);
+                    overflow: hidden;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+            &__text {
+                flex-basis: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                &-title {
+                    margin-bottom: 25px;
+                    font-size: 3.6rem;
+                    line-height: 4.2rem;
+                }
+                &-description {
+                    line-height: 1.2rem;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+        &__footer {
+            display: none;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .projects {
+        &__list {
+            &-block {
+                padding: 0;
             }
         }
     }
