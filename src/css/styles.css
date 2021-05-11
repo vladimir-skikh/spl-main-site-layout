@@ -1213,6 +1213,8 @@
   }
   .infographic-item__image {
     margin-bottom: 35px;
+    width: 100px;
+    height: 100px;
   }
   .infographic-item__title {
     font-size: 2rem;
