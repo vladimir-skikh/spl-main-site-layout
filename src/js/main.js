@@ -64,5 +64,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
             }
         });
     });
+});
 
+const projects_select = new BVSelect({
+    selector: "#projects_select",
+    searchbox: true,
+    placeholder: "Выберете проект",
+    search_placeholder: "Проект..."
 });

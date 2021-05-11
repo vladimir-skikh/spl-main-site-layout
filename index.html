@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPL</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" href="src/img/icon.ico" type="image/icon type">
+
+    <link rel="stylesheet" href="src/css/bvselect.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -419,7 +423,13 @@
                                 <input class="feedback__form-group__input form-group__input" type="email" name="email" id="feedback_email" placeholder="Ваш email">
                             </div>
                             <div class="feedback__form-group form-group">
-                                <input class="feedback__form-group__input form-group__input" type="text" name="select" id="feedback_select" placeholder="здесь будет селект">
+                                <select id="projects_select" class="feedback__form-group__input form-group__input" multiple>
+                                    <option value="jquery" selected>jQuery</option>
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="angular">Angular</option>
+                                    <option value="react">React</option>
+                                    <option value="vue">Vue.js</option>
+                                </select>
                             </div>
                         </div>
                         <div class="feedback__form_right">
@@ -502,6 +512,7 @@
             </div>
         </div>
     </footer>
+    <script src="src/js/bvselect.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>
