@@ -29,6 +29,9 @@
         width: 1px;
         height: 1px;
         overflow: hidden;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
         &:focus {
             outline: none;
         }
