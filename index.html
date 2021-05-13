@@ -7,7 +7,9 @@
     <title>SPL</title>
     <link rel="icon" href="src/img/icon.ico" type="image/icon type">
 
-    <link rel="stylesheet" href="src/css/bvselect.css" />
+    <link rel="stylesheet" href="src/css/libs/bvselect.css" />
+    <link rel="stylesheet" href="src/css/libs/glide.core.css" />
+    <link rel="stylesheet" href="src/css/libs/glide.theme.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
@@ -168,37 +170,43 @@
                     </li>
                 </ul>
             </div>
-            <div class="projects__list-block">
-                <ul class="projects__list">
-                    <li class="projects-card projects__list-item">
-                        <div class="projects-card__cover">
-                            <a href="#" class="projects-card__cover-link">
-                                <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+            <div class="projects__list-block glide">
+                <div class="glide__track projects__list-block__slider" data-glide-el="track">
+                    <ul class="projects__list glide__slides">
+                        <li class="projects-card projects__list-item glide__slide">
+                            <div class="projects-card__cover">
+                                <a href="#" class="projects-card__cover-link">
+                                    <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                </a>
+                            </div>
+                            <a class="projects-card__text" href="#">
+                                <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                <p class="projects-card__text-description">
+                                    Разнообразный и богатый опыт говорит нам,
+                                    что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                </p>
                             </a>
-                        </div>
-                        <a class="projects-card__text" href="#">
-                            <h3 class="projects-card__text-title">Заголовок проекта</h3>
-                            <p class="projects-card__text-description">
-                                Разнообразный и богатый опыт говорит нам,
-                                что граница обучения кадров выявляет срочную потребность стандартных подходов
-                            </p>
-                        </a>
-                    </li>
-                    <!--<li class="projects-card projects__list-item">
-                        <div class="projects-card__miniature">
-                            <a href="#" class="projects-card__miniature-link">
-                                <img class="projects-card__miniature-image" src="./src/img/project.jpg" alt="Проект 1">
+                        </li>
+                        <li class="projects-card projects__list-item glide__slide">
+                            <div class="projects-card__cover">
+                                <a href="#" class="projects-card__cover-link">
+                                    <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                </a>
+                            </div>
+                            <a class="projects-card__text" href="#">
+                                <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                <p class="projects-card__text-description">
+                                    Разнообразный и богатый опыт говорит нам,
+                                    что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                </p>
                             </a>
-                        </div>
-                        <a class="projects-card__text" href="#">
-                            <h3 class="projects-card__text-title">Заголовок проекта</h3>
-                            <p class="projects-card__text-description">
-                                Разнообразный и богатый опыт говорит нам,
-                                что граница обучения кадров выявляет срочную потребность стандартных подходов
-                            </p>
-                        </a>
-                    </li>-->
-                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
             </div>
             <div class="projects__footer">
                 <a href="#" class="projects__footer-link link_button">Все проекты</a>
@@ -512,7 +520,8 @@
             </div>
         </div>
     </footer>
-    <script src="src/js/bvselect.js"></script>
+    <script src="src/js/libs/bvselect.js"></script>
+    <script src="src/js/libs/glide.js"></script>
     <script src="src/js/main.js"></script>
 </body>
 </html>
