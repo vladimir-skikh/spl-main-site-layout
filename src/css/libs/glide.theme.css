@@ -35,7 +35,7 @@
 
 .glide__bullets {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     bottom: 2em;
     left: 50%;
     display: inline-flex;
