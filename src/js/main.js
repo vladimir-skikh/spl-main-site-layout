@@ -26,14 +26,14 @@ const handleTouchMove = (evt) => {
     const xDiff = xDown - xUp;
     const yDiff = yDown - yUp;
 
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+        if ( xDiff > 0 && !evt.target.classList.contains('no-use-swipe')) {
             /* свайп влево */ 
             if (mobile_menu_button.checked) {
                 // имитируем событие клика на чекбокс для открытия/закрытия мобильного меню
                 mobile_menu_button.click(); 
             }
-        } else {
+        } else if (xDiff < 0 && !evt.target.classList.contains('no-use-swipe')) {
             /* свайп вправо */
             if (!mobile_menu_button.checked) {
                 // имитируем событие клика на чекбокс для открытия/закрытия мобильного меню
