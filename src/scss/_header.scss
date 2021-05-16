@@ -182,6 +182,15 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
+            position: relative;
+            &__list {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -25px);
+            }
+            &:hover &__list, &:focus &__list {
+                display: flex;
+            }
             &_active {
                 position: relative;
                 color: $blue-main;
@@ -201,6 +210,8 @@
         }
     }
     &__link {
+        display: block;
+        height: 100%;
         &:hover, &:focus {
             color: $blue-main;
             text-decoration: none;
@@ -208,10 +219,53 @@
     }
 }
 
+.sublist {
+    display: none;
+    width: 175px;
+    border: 1px solid $gray-opacity-05;
+    border-radius: 10px;
+    background-color: $white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    &-title {
+        display: block;
+        padding: 10px 15px;
+        color: $blue-main;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        border-bottom: 1px solid $gray-opacity-05;
+    }
+    &-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        &:last-child {
+            padding-bottom: 15px;
+        }
+        &__link {
+            flex-basis: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: $black-main;
+            text-decoration: none;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            
+            &:hover, &focus {
+                color: $blue-main-hover;
+            }
+        }
+    }
+}
+
 
 @media (min-width: 860px) {
     .header {
-        height: 110px;
+        height: 85px;
         padding: 15px 0;
         background-color: $white;
         padding-bottom: 0;

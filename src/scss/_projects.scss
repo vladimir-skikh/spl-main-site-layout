@@ -161,8 +161,8 @@
         }
         &-card {
             flex-direction: row;
-            padding: 0 48px 0 48px;
             background: transparent;
+            padding: 0 48px 0 48px;
             box-shadow: none;
             border-radius: 0px;
             max-width: unset;
@@ -212,6 +212,9 @@
             &-block {
                 padding: 0;
             }
+        }
+        &-card {
+            padding: 0;
         }
     }
 }
