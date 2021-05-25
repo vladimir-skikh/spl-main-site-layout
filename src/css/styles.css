@@ -1233,27 +1233,24 @@
 }
 
 .infographic-list {
+  list-style: none;
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+.infographic-item {
+  background: #E2E9FB;
+  padding: 6px 14px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.infographic-item {
-  -ms-flex-preferred-size: 210px;
-      flex-basis: 210px;
-  background: #E2E9FB;
-  padding: 6px 14px;
-  border-radius: 10px;
+.infographic-item__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1264,7 +1261,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  max-width: 276px;
 }
 
 .infographic-item__image {
@@ -1284,10 +1281,12 @@
 
 .infographic-item__text {
   color: rgba(43, 44, 52, 0.75);
+  font-size: 1.2rem;
   line-height: 1.5rem;
   margin: 0;
   padding: 0;
   text-align: center;
+  white-space: normal;
 }
 
 @media (min-width: 860px) {
@@ -1297,13 +1296,9 @@
     padding-bottom: 80px;
   }
   .infographic-list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin-bottom: 75px;
   }
   .infographic-item {
-    -ms-flex-preferred-size: 276px;
-        flex-basis: 276px;
     padding: 0;
     border-radius: 0;
     margin: 0;
