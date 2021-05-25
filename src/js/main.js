@@ -74,7 +74,7 @@ const projects_select = new BVSelect({
     search_placeholder: "Проект..."
 });
 
-// Инициализация слайдера
+// Инициализация слайдеров
 const glide = new Glide('.glide', {
     startAt: 0,
     perView: 1,
@@ -94,3 +94,23 @@ const glide = new Glide('.glide', {
     }
 });
 glide.mount();
+
+const glide_infographic = new Glide('.glide_infographic', {
+    startAt: 0,
+    perView: 1,
+    keyboard: true,
+    gap: 30,
+    focusAt: 'center',
+    breakpoints: {
+        860: {
+            perView: 3,
+        },
+        660: {
+            perView: 2,
+        },
+        450: {
+            perView: 1,
+        }
+    }
+});
+glide_infographic.mount();

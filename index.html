@@ -424,29 +424,46 @@
 
         <!-- Infographic section -->
         <section class="wrapper_padding-15 infographic">
-            <div class="wrapper wrapper_row">
-                <ul class="infographic-list">
-                    <li class="infographic-item">
-                        <img src="src/img/infographic-team.svg" class="infographic-item__image">
-                        <span class="infographic-item__title">БОЛЬШАЯ КОМАНДА</span>
-                        <p class="infographic-item__text">Над различными проектами трудится множество студентов, воплощая идеи в конкретный продукт</p>
-                    </li>
-                    <li class="infographic-item">
-                        <img src="src/img/complited-projects.svg" class="infographic-item__image">
-                        <span class="infographic-item__title">реализованные проекты</span>
-                        <p class="infographic-item__text">В нашем вузе на протяжении многих лет студенты показывают высокий уровень реализации проектов</p>
-                    </li>
-                    <li class="infographic-item">
-                        <img src="src/img/growing-up.svg" class="infographic-item__image">
-                        <span class="infographic-item__title">постоянное развитие</span>
-                        <p class="infographic-item__text">В процессе реализации проекта студенты открывают для себя новые знания</p>
-                    </li>
-                    <li class="infographic-item">
-                        <img src="src/img/new-ideas.svg" class="infographic-item__image">
-                        <span class="infographic-item__title">новые идеи</span>
-                        <p class="infographic-item__text">Каждая команда хочет реализовать себя как в можно большем количестве проектов</p>
-                    </li>
-                </ul>
+            <!--
+
+                <div class="projects__list-block glide">
+                <div class="glide__track projects__list-block__slider" data-glide-el="track">
+                    <ul class="projects__list glide__slides no-use-swipe">
+                        <li class="projects-card__wrapper glide__slide no-use-swipe">
+            -->
+            <div class="wrapper wrapper_row glide_infographic">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="infographic-list glide__slides no-use-swipe">
+                        <li class="infographic-item no-use-swipe">
+                            <div class="infographic-item__wrapper">
+                                <img src="src/img/infographic-team.svg" class="infographic-item__image no-use-swipe">
+                                <span class="infographic-item__title">БОЛЬШАЯ КОМАНДА</span>
+                                <p class="infographic-item__text no-use-swipe">Над различными проектами трудится множество студентов, воплощая идеи в конкретный продукт</p>
+                            </div>
+                        </li>
+                        <li class="infographic-item no-use-swipe">
+                            <img src="src/img/complited-projects.svg" class="infographic-item__image no-use-swipe">
+                            <span class="infographic-item__title no-use-swipe">реализованные проекты</span>
+                            <p class="infographic-item__text no-use-swipe">В нашем вузе на протяжении многих лет студенты показывают высокий уровень реализации проектов</p>
+                        </li>
+                        <li class="infographic-item no-use-swipe">
+                            <img src="src/img/growing-up.svg" class="infographic-item__image no-use-swipe">
+                            <span class="infographic-item__title no-use-swipe">постоянное развитие</span>
+                            <p class="infographic-item__text no-use-swipe">В процессе реализации проекта студенты открывают для себя новые знания</p>
+                        </li>
+                        <li class="infographic-item no-use-swipe">
+                            <img src="src/img/new-ideas.svg" class="infographic-item__image no-use-swipe">
+                            <span class="infographic-item__title no-use-swipe">новые идеи</span>
+                            <p class="infographic-item__text no-use-swipe">Каждая команда хочет реализовать себя как в можно большем количестве проектов</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                </div>
             </div>
         </section>
         <!-- END Infographic section -->
