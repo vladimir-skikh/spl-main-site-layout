@@ -452,6 +452,7 @@
 .menu__link {
   display: block;
   height: 100%;
+  font-weight: 300;
 }
 
 .menu__link:hover, .menu__link:focus {
@@ -955,7 +956,7 @@
     padding: 0;
   }
   .projects-card {
-    padding: 0;
+    padding: 0 0 0 17px;
   }
 }
 
