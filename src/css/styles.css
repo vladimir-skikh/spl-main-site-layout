@@ -1481,6 +1481,10 @@
   padding: 15px 0;
 }
 
+.footer__column_left {
+  width: 95px;
+}
+
 .footer__social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1495,6 +1499,12 @@
 }
 
 .footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 10px;
 }
 
