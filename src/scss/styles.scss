@@ -32,6 +32,9 @@ html, body {
     font-family: 'Roboto', 'Arial', sans-serif;
     color: $black-main;
 }
+main {
+    min-height: calc(100vh - 60px);
+}
 
 .wrapper {
     width: 100%;
@@ -101,6 +104,9 @@ html, body {
     }
 }
 @media (min-width: 860px) {
+    main {
+        min-height: calc(100vh - 200px);
+    }
     .section {
         &-title {
             font-size: 3.6rem;

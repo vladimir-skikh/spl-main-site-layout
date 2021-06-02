@@ -1594,6 +1594,10 @@ html, body {
   color: #2B2C34;
 }
 
+main {
+  min-height: calc(100vh - 60px);
+}
+
 .wrapper {
   width: 100%;
   max-width: 1290px;
@@ -1671,6 +1675,9 @@ html, body {
 }
 
 @media (min-width: 860px) {
+  main {
+    min-height: calc(100vh - 200px);
+  }
   .section-title {
     font-size: 3.6rem;
     line-height: 4.2rem;
