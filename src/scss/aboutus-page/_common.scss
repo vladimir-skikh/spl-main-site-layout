@@ -5,3 +5,12 @@
         font-weight: 300;
     }
 }
+
+@media (min-width: 860px) {
+    .about-us {
+        &__text {
+            font-size: 1.8rem;
+            line-height: 3rem;
+        }
+    }
+}
