@@ -1,3 +1,4 @@
+// событие при загрузке документа 
 document.addEventListener('DOMContentLoaded', () => {
     let video_play_button = document.querySelector('.video__button');
 
@@ -5,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     video_play_button.addEventListener('onkeyup', playVideo, false);
 });
 
+// функция проигрывания видео 
 const playVideo = (evt) => {
     let video = document.querySelector('.video__source');
     let video_play_cover = document.querySelector('.video__cover');
