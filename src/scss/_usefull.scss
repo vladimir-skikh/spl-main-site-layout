@@ -153,3 +153,16 @@
         border-top: 4px solid $black-main;
     }
 }
+
+.page-title {
+    font-weight: normal;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    padding: 0;
+    margin: 24px 0 10px;
+    @media (min-width: 860px) {
+        font-size: 7.2rem;
+        line-height: 8.4rem;
+        margin: 60px 0;
+    }
+}
