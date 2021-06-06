@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/index-page-styles.css">
+    <link rel="stylesheet" href="src/css/news-page-styles.css">
 </head>
 <body>
     <header class="header">
@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li class="mobile-menu__list-item">
-                        <a class="mobile-menu__link menu-link" href="news.html">
+                        <a class="mobile-menu__link menu-link" href="#">
                             Новости
                         </a>
                     </li>
@@ -89,7 +89,7 @@
         <div class="wrapper wrapper_padding-15 header__wrapper">
             <div class="header__menu">
                 <a href="/" class="header__logo">
-                    <img class="header__logo-image" src="./src/img/logo.png" alt="" width="49" height="54">
+                    <img class="header__logo-image" src="src/img/logo.png" alt="" width="49" height="54">
                 </a>
                 <nav class="header__menu-nav menu">
                     <ul class="menu__list">
@@ -161,109 +161,34 @@
 
     </header>
     <main class="main">
+        <div class="wrapper wrapper_center wrapper_padding-15">
 
-        <!-- Homescreen section -->
-        <div class="wrapper wrapper_padding-15">
-            <section class="main-screen">
-                <div class="main-screen__image-block">
-                    <img src="/src/img/main-illustration.jpg" alt="Проектная лаборатория SPL" class="main-screen__image">
-                </div>
-                <div class="main-screen__text-block">
-                    <h1 class="main-screen__title">
-                        Заголовок главный
-                    </h1>
-                    <p class="main-screen__text">
-                        Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание направлений прогрессивного развития. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям
-                    </p>
-                    <a href="#" class="main-screen__link link_button">Подробнее</a>
-                </div>
-            </section>
-        </div>
-        <!-- END Homescreen section -->
-
-        <!-- Projects section -->
-        <section class="projects">
-            <div class="projects__header">
-                <h2 class="section-title projects__header-title">
-                    Наши проекты
-                </h2>
-                <ul class="projects__states-list">
-                    <li class="projects__states-item" data-state="ready">
-                        <span class="projects__states-item__text projects__states-item__text_active">
-                            Готовые
-                        </span>
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item__link">Главная</a>
                     </li>
-                    <li class="projects__states-item" data-state="in-work">
-                        <span class="projects__states-item__text">
-                            В работе
-                        </span>
-                    </li>
-                    <li class="projects__states-item" data-state="future">
-                        <span class="projects__states-item__text">
-                            Будущие
-                        </span>
+                    <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item__link">Новости</a>
                     </li>
                 </ul>
             </div>
-            <div class="projects__list-block glide glide_projects">
-                <div class="glide__track projects__list-block__slider" data-glide-el="track">
-                    <ul class="projects__list glide__slides no-use-swipe">
-                        <li class="projects-card__wrapper glide__slide no-use-swipe">
-                            <div class="projects-card projects__list-item">
-                                <div class="projects-card__cover no-use-swipe">
-                                    <a href="#" class="projects-card__cover-link no-use-swipe">
-                                        <img class="projects-card__cover-image no-use-swipe" src="./src/img/project.jpg" alt="Проект 1">
-                                    </a>
-                                </div>
-                                <a class="projects-card__text no-use-swipe" href="#">
-                                    <h3 class="projects-card__text-title no-use-swipe">Заголовок проекта</h3>
-                                    <p class="projects-card__text-description no-use-swipe">
-                                        Разнообразный и богатый опыт говорит нам,
-                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="projects-card__wrapper glide__slide no-use-swipe">
-                            <div class="projects-card projects__list-item">
-                                <div class="projects-card__cover no-use-swipe">
-                                    <a href="#" class="projects-card__cover-link no-use-swipe">
-                                        <img class="projects-card__cover-image no-use-swipe" src="./src/img/project.jpg" alt="Проект 1">
-                                    </a>
-                                </div>
-                                <a class="projects-card__text no-use-swipe" href="#">
-                                    <h3 class="projects-card__text-title no-use-swipe">Заголовок проекта</h3>
-                                    <p class="projects-card__text-description no-use-swipe">
-                                        Разнообразный и богатый опыт говорит нам,
-                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                </div>
-            </div>
-            <div class="projects__footer">
-                <a href="#" class="projects__footer-link link_button">Все проекты</a>
-            </div>
-        </section>
-        <!-- END Projects section -->
+            <!-- END Breadcrumbs -->
 
-        <!-- News section -->
-        <div class="wrapper wrapper_padding-15">
+            <!-- Page title -->
+            <h1 class="page-title">
+                Новости
+            </h1>
+            <!-- END Page title -->
+
+            <!-- News section -->
             <section class="news">
-                <h2 class="section-title">
-                    Новости
-                </h2>
                 <ul class="news-list">
                     <li class="news-card">
                         <a href="#" class="news-card__link">
                             <span class="news-card__image-block">
-                                <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
                             </span>
                             <span class="news-card__text">
                                 <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
@@ -289,7 +214,7 @@
                     <li class="news-card">
                         <a href="#" class="news-card__link">
                             <span class="news-card__image-block">
-                                <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
                             </span>
                             <span class="news-card__text">
                                 <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
@@ -315,7 +240,7 @@
                     <li class="news-card">
                         <a href="#" class="news-card__link">
                             <span class="news-card__image-block">
-                                <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
                             </span>
                             <span class="news-card__text">
                                 <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
@@ -341,7 +266,7 @@
                     <li class="news-card">
                         <a href="#" class="news-card__link">
                             <span class="news-card__image-block">
-                                <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
                             </span>
                             <span class="news-card__text">
                                 <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
@@ -367,7 +292,7 @@
                     <li class="news-card">
                         <a href="#" class="news-card__link">
                             <span class="news-card__image-block">
-                                <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
                             </span>
                             <span class="news-card__text">
                                 <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
@@ -393,7 +318,85 @@
                     <li class="news-card">
                         <a href="#" class="news-card__link">
                             <span class="news-card__image-block">
-                                <img class="news-card__image" src="./src/img/news-image.jpg" alt="Новость 1">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
+                            </span>
+                            <span class="news-card__text">
+                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__description-short">
+                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <span class="news-card__image-block">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
+                            </span>
+                            <span class="news-card__text">
+                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__description-short">
+                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <span class="news-card__image-block">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
+                            </span>
+                            <span class="news-card__text">
+                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
+                                    &nbsp;#хештег_на_конкретный_проект
+                                </span>
+                                <span class="news-card__title">
+                                    Заголовок новости, которая тут будет
+                                </span>
+                                <span class="news-card__description-short">
+                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                </span>
+                                <span class="news-card__meta">
+                                    <span class="news-card__meta__read-more">
+                                        Читать далее
+                                    </span>
+                                    <span class="news-card__meta__date">
+                                        8.02.2021
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="news-card">
+                        <a href="#" class="news-card__link">
+                            <span class="news-card__image-block">
+                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
                             </span>
                             <span class="news-card__text">
                                 <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
@@ -417,107 +420,39 @@
                         </a>
                     </li>
                 </ul>
-                <a href="news.html" class="link_button news__footer-link">Все новости</a>
             </section>
+            <!-- END News section -->
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__list-item pagination__arrow-item">
+                        <a href="#" class="pagination__arrow pagination__arrow_left"></a>
+                    </li>
+                    <li class="pagination__list-item pagination__list-item_active">
+                        <a href="#" class="pagination__page pagination__page_active">1</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a href="#" class="pagination__page">2</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a href="#" class="pagination__page">3</a>
+                    </li>
+                    <li class="pagination__list-item pagination__arrow-item">
+                        <a href="#" class="pagination__arrow pagination__arrow_right"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Pagination -->
+
         </div>
-        <!-- END News section -->
-
-        <!-- Infographic section -->
-        <section class="wrapper_padding-15 infographic">
-            <div class="wrapper wrapper_row glide glide_infographic no-use-swipe">
-                <div class="infographic-list-wrapper glide__track no-use-swipe" data-glide-el="track">
-                    <ul class="infographic-list glide__slides no-use-swipe">
-                        <li class="infographic-item no-use-swipe">
-                            <div class="infographic-item__wrapper no-use-swipe">
-                                <img src="src/img/infographic-team.svg" class="infographic-item__image no-use-swipe">
-                                <span class="infographic-item__title">БОЛЬШАЯ КОМАНДА</span>
-                                <p class="infographic-item__text no-use-swipe">Над различными проектами трудится множество студентов, воплощая идеи в конкретный продукт</p>
-                            </div>
-                        </li>
-                        <li class="infographic-item no-use-swipe">
-                            <div class="infographic-item__wrapper no-use-swipe">
-                                <img src="src/img/complited-projects.svg" class="infographic-item__image no-use-swipe">
-                                <span class="infographic-item__title no-use-swipe">реализованные проекты</span>
-                                <p class="infographic-item__text no-use-swipe">В нашем вузе на протяжении многих лет студенты показывают высокий уровень реализации проектов</p>
-                            </div>
-                        </li>
-                        <li class="infographic-item no-use-swipe">
-                            <div class="infographic-item__wrapper no-use-swipe">
-                                <img src="src/img/growing-up.svg" class="infographic-item__image no-use-swipe">
-                                <span class="infographic-item__title no-use-swipe">постоянное развитие</span>
-                                <p class="infographic-item__text no-use-swipe">В процессе реализации проекта студенты открывают для себя новые знания</p>
-                            </div>
-                        </li>
-                        <li class="infographic-item no-use-swipe">
-                            <div class="infographic-item__wrapper no-use-swipe">
-                                <img src="src/img/new-ideas.svg" class="infographic-item__image no-use-swipe">
-                                <span class="infographic-item__title no-use-swipe">новые идеи</span>
-                                <p class="infographic-item__text no-use-swipe">Каждая команда хочет реализовать себя как в можно большем количестве проектов</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="glide__bullets infographic__slider-bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                    <button class="glide__bullet" data-glide-dir="=3"></button>
-                </div>
-            </div>
-        </section>
-        <!-- END Infographic section -->
-
-        <!-- Feedback section -->
-        <section class="feedback wrapper_padding-15">
-            <div class="wrapper wrapper_center">
-                <h2 class="section-title">
-                    Обратная связь
-                </h2>
-                <div class="feedback__content">
-                    <p class="feedback__description">
-                        Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа ampden-Sydney, штат Вирджиния.
-                    </p>
-                    <form class="feedback__form form">
-                        <div class="feedback__form_left">
-                            <div class="feedback__form-group form-group">
-                                <input class="feedback__form-group__input form-group__input" type="text" name="name" id="feedback_name" placeholder="Ваше имя">
-                            </div>
-                            <div class="feedback__form-group form-group">
-                                <input class="feedback__form-group__input form-group__input" type="email" name="email" id="feedback_email" placeholder="Ваш email">
-                            </div>
-                            <div class="feedback__form-group form-group">
-                                <select id="projects_select" class="feedback__form-group__input form-group__input" multiple>
-                                    <option value="jquery" selected>jQuery</option>
-                                    <option value="javascript">JavaScript</option>
-                                    <option value="angular">Angular</option>
-                                    <option value="react">React</option>
-                                    <option value="vue">Vue.js</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="feedback__form_right">
-                            <div class="feedback__form-group form-group">
-                                <textarea class="feedback__form-group__textarea form-group__textarea" name="comment" id="feedback__comment" rows="5" placeholder="Напишите немного о том, чем вы хотите заниматься"></textarea>
-                            </div>
-                            <div class="feedback__form-group form-group">
-                                <button type="submit" class="feedback__form-group__submit form-group__submit button">
-                                    Отправить
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- END Feedback section -->
-
     </main>
     <footer class="footer">
         <div class="wrapper wrapper_padding-15">
             <div class="footer__wrapper">
                 <div class="footer__column footer__column_left">
                     <div class="footer__logo">
-                        <img class="footer__logo-image" src="./src/img/logo.png" alt="" width="35" height="40">
+                        <img class="footer__logo-image" src="src/img/logo.png" alt="" width="35" height="40">
                     </div>
                     <div class="footer__social-links">
                         <a href="#" class="footer__social-links__link social-link social-link_instagram">
@@ -551,7 +486,7 @@
                             </a>
                         </li>
                         <li class="footer__links-list__item">
-                            <a class="footer__link" href="news.html">
+                            <a class="footer__link" href="#">
                                 Новости
                             </a>
                         </li>
@@ -575,9 +510,6 @@
             </div>
         </div>
     </footer>
-    <script src="src/js/libs/bvselect.js"></script>
-    <script src="src/js/libs/glide.js"></script>
     <script src="src/js/main.js"></script>
-    <script src="src/js/index-page.js"></script>
 </body>
 </html>
