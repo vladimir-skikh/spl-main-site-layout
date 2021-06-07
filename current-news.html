@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/news-page-styles.css">
+    <link rel="stylesheet" href="src/css/current-news-page-styles.css">
 </head>
 <body>
     <header class="header">
@@ -170,280 +170,60 @@
                         <a href="index.html" class="breadcrumbs__list-item__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__list-item">
-                        <a class="breadcrumbs__list-item__link">Новости</a>
+                        <a href="news.html" class="breadcrumbs__list-item__link">Новости</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item__link">Конкретная новость</a>
                     </li>
                 </ul>
             </div>
             <!-- END Breadcrumbs -->
 
-            <!-- Page title -->
-            <h1 class="page-title">
-                Новости
-            </h1>
-            <!-- END Page title -->
+            <div class="current-news">
+                <!-- Current news section -->
+                <section class="current-news__main-content">
+                    <h1 class="current-news__title">
+                        Заголовок конкретной новости, о которой пойдёт речь ниже
+                    </h1>
+                    <div class="current-news__meta">
+                        <span class="date current-news__date">
+                            16.02.2021
+                        </span>
+                        <span class="hashtag current-news__hashtag">
+                            #обзор_технологии
+                        </span>
+                        <span class="hashtag current-news__hashtag">
+                            #реализация_проекта
+                        </span>
+                    </div>
+                    <div class="current-news__image-block">
+                        <img class="current-news__image" src="src/img/current-news-1.jpg" alt="Обсуждение новых идей (фото Иванова Ивана, 3 курс)">
+                    </div>
+                    <p class="current-news__text">
+                        Задача организации, в особенности же укрепление и развитие структуры требуют определения и уточнения соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Товарищи! новая модель организационной деятельности требуют от нас анализа модели развития. Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации.
+                        <br/>
+                        <br/>
+                        С другой стороны новая модель организационной деятельности требуют определения и уточнения систем массового участия. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Равным образом постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений
+                    </p>
+                    <div class="current-news__image-block">
+                        <img class="current-news__image" src="src/img/current-news-2.jpg" alt="Выступление на конференции (фото Иванова Ивана, 3 курс)">
+                    </div>
+                    <p class="current-news__text">
+                        Идейные соображения высшего порядка, а также сложившаяся структура организации требуют определения и уточнения дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений.
+                        <br/>
+                        <br/>
+                        Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Равным образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации. Таким образом новая модель организационной деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        <br/>
+                        <br/>
+                        Равным образом реализация намеченных плановых заданий позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании существенных финансовых и административных условий.
+                    </p>
+                </section>
+                <!-- END Current News section -->
 
-            <!-- News section -->
-            <section class="news">
-                <ul class="news-list">
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="news-card">
-                        <a href="current-news.html" class="news-card__link">
-                            <span class="news-card__image-block">
-                                <img class="news-card__image" src="src/img/news-image.jpg" alt="Новость 1">
-                            </span>
-                            <span class="news-card__text">
-                                <span href="#" class="news-card__hashtag" role="link" title="Хештег проекта">
-                                    &nbsp;#хештег_на_конкретный_проект
-                                </span>
-                                <span class="news-card__title">
-                                    Заголовок новости, которая тут будет
-                                </span>
-                                <span class="news-card__description-short">
-                                    Разнообразный и богатый опыт говорит нам что граница обучения кадров выявляет срочную потребность стандартных подходов
-                                </span>
-                                <span class="news-card__meta">
-                                    <span class="news-card__meta__read-more">
-                                        Читать далее
-                                    </span>
-                                    <span class="news-card__meta__date">
-                                        8.02.2021
-                                    </span>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <!-- END News section -->
+                <aside class="current-news__aside">
 
-            <!-- Pagination -->
-            <div class="pagination">
-                <ul class="pagination__list">
-                    <li class="pagination__list-item pagination__arrow-item">
-                        <a href="#" class="pagination__arrow pagination__arrow_left"></a>
-                    </li>
-                    <li class="pagination__list-item pagination__list-item_active">
-                        <a href="#" class="pagination__page pagination__page_active">1</a>
-                    </li>
-                    <li class="pagination__list-item">
-                        <a href="#" class="pagination__page">2</a>
-                    </li>
-                    <li class="pagination__list-item">
-                        <a href="#" class="pagination__page">3</a>
-                    </li>
-                    <li class="pagination__list-item pagination__arrow-item">
-                        <a href="#" class="pagination__arrow pagination__arrow_right"></a>
-                    </li>
-                </ul>
+                </aside>
             </div>
-            <!-- END Pagination -->
 
         </div>
     </main>

@@ -270,3 +270,22 @@
         }
     }
 }
+
+// Хештеги
+.hashtag {
+    display: inline-block;
+    padding: 2px 7px;
+    background-color: $blue-main;
+    color: $white;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+// Даты 
+.date {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: $gray-opacity-05;
+}

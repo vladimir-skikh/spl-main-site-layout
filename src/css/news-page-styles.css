@@ -324,6 +324,23 @@
   background-color: transparent;
 }
 
+.hashtag {
+  display: inline-block;
+  padding: 2px 7px;
+  background-color: #285BD4;
+  color: #FFFFFE;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.date {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: rgba(43, 44, 52, 0.5);
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
