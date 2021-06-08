@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const initSliders = (sliders) => {
         for (const key in sliders) {
             let slider_object = sliders[key];
-            console.log(slider_object.active);
 
             if ((!slider_object.active && slider_object.breakpoint === null) || 
                 (!slider_object.active && slider_object.breakpoint > 0 && window.innerWidth <= slider_object.breakpoint)

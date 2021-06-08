@@ -964,125 +964,217 @@
   }
 }
 
-.about-us__text {
-  margin: 24px 0;
-  padding: 0;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  font-weight: 300;
-}
-
-.about-us__image {
+.current-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
 
-.about-us__image-block {
+.current-news__main-content {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.current-news__title {
+  margin: 30px 0 10px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.current-news__aside {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.current-news__image {
+  width: 100%;
+  height: auto;
+}
+
+.current-news__image-block {
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   line-height: calc(100% - 3px);
 }
 
+.current-news__text {
+  margin: 24px 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #2B2C34;
+}
+
+.current-news__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.current-news__date {
+  margin-right: 30px;
+}
+
+.current-news__hashtag:not(:last-of-type) {
+  margin-right: 10px;
+}
+
 @media (min-width: 860px) {
-  .about-us__text {
+  .current-news__main-content {
+    -ms-flex-preferred-size: 58%;
+        flex-basis: 58%;
+  }
+  .current-news__title {
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+  }
+  .current-news__aside {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    height: 100%;
+  }
+  .current-news__text {
     margin: 60px 0;
-    font-size: 1.8rem;
-    line-height: 3rem;
-  }
-  .about-us__colored {
-    background-color: #F8F9FA;
   }
 }
 
-.video {
-  width: 242px;
-  height: 154px;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  background-color: #000000;
+.other-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.video__source {
+.other-news__title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.other-news__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 100%;
-  display: none;
 }
 
-.video__source_visible {
-  display: block;
+.other-news__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.video-block {
-  width: 100%;
+.other-news__list-item__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.video__cover {
-  position: absolute;
-  top: 0;
-  left: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  height: 100%;
+  max-width: 150px;
+  margin-right: 10px;
 }
 
-.video__cover_hidden {
-  display: none;
+.other-news__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #2B2C34;
 }
 
-.video__button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.other-news__link__image {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
 }
 
-.video__button_hidden {
-  display: none;
+.other-news__link__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-.video__button:hover, .video__button:focus {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  cursor: pointer;
-  -webkit-filter: opacity(0.7);
-  filter: opacity(0.7);
+.other-news__image {
+  width: 100%;
+  height: auto;
 }
 
-@media (min-width: 574px) {
-  .video {
-    width: 500px;
-    height: 287px;
-  }
-  .video-block {
-    margin-top: 40px;
-    margin-bottom: 75px;
-  }
+.other-news__item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 13px;
 }
 
-@media (min-width: 860px) {
-  .video {
-    width: 586px;
-    height: 373px;
-  }
-  .video-block {
-    margin-top: 60px;
-    margin-bottom: 100px;
-  }
+.other-news__hashtag {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-bottom: 16px;
 }
 
 .footer {
