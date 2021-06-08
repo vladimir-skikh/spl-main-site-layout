@@ -48,3 +48,25 @@ const handleTouchMove = (evt) => {
 
 document.addEventListener('touchstart', handleTouchStart, false);        
 document.addEventListener('touchmove', handleTouchMove, false);
+
+const scrollToTop = (evt) => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+const scroll_top_button = document.getElementById('button');
+scroll_top_button.addEventListener('click', scrollToTop);
+
+window.addEventListener('scroll', () => {
+    let scrolled = window.pageYOffset;
+    let position = scroll_top_button.offsetTop - 300;
+  
+    if (scrolled >= position && !scroll_top_button.classList.contains('show')) {
+        scroll_top_button.classList.add('show');
+    }
+    else if (scrolled < position && scroll_top_button.classList.contains('show')) {
+        scroll_top_button.classList.remove('show');
+    }
+});

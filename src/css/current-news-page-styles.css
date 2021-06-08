@@ -341,6 +341,107 @@
   color: rgba(43, 44, 52, 0.5);
 }
 
+/* .scroll-top-button {
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    
+    &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        padding: 2px 6px;
+        border-radius: 10px;
+        background-color: $blue-main;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        &::before, &::after {
+            background-color: $blue-main-hover;
+        } 
+    }
+    &:focus {
+        &::before, &::after {
+            background-color: $blue-main-focus;
+        } 
+    }
+    &_left {
+        &::before {
+            left: 2px;
+            transform-origin: left bottom;
+            transform: translateY(-1px) rotate(-45deg);
+        }
+        &::after {
+            left: 2px;
+            transform-origin: left top;
+            transform: translateY(-2px) rotate(45deg);
+        }
+    }
+} */
+.scroll-top-button {
+  display: block;
+  background-color: #285BD4;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  -webkit-transition: background-color .3s, opacity .3s, visibility .3s;
+  transition: background-color .3s, opacity .3s, visibility .3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+}
+
+.scroll-top-button::before, .scroll-top-button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 2px);
+  padding: 2px 8px;
+  border-radius: 10px;
+  background-color: #FFFFFE;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.scroll-top-button:hover {
+  cursor: pointer;
+  background-color: #1949BA;
+}
+
+.scroll-top-button:focus {
+  cursor: pointer;
+  background-color: #1641A4;
+}
+
+.scroll-top-button::before {
+  -webkit-transform: translate(calc(-100% + 6px), -3px) rotate(-45deg);
+          transform: translate(calc(-100% + 6px), -3px) rotate(-45deg);
+  /* transform: translateX(-100%) rotate(-45deg); */
+}
+
+.scroll-top-button::after {
+  -webkit-transform: translate(-1px, -3px) rotate(45deg);
+          transform: translate(-1px, -3px) rotate(45deg);
+}
+
+.scroll-top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 1600px) {
+  .scroll-top-button {
+    bottom: 50px;
+    right: 100px;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1090,6 +1191,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 0;
+  position: relative;
 }
 
 .footer__column_left {
