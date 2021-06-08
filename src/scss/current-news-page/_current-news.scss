@@ -19,6 +19,9 @@
     &__aside {
         flex-basis: 100%;
         height: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
     }
     &__image {
         width: 100%;
