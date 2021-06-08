@@ -44,12 +44,17 @@
     &__meta {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         margin-bottom: 20px;
     }
     &__date {
         margin-right: 30px;
+        flex-basis: 100%;
+        margin-bottom: 10px;
     }
     &__hashtag {
+        display: block;
+        margin-bottom: 10px;
         &:not(:last-of-type) {
             margin-right: 10px;
         }
@@ -71,6 +76,9 @@
         }
         &__text {
             margin: 60px 0;
+        }
+        &__date {
+            flex-basis: unset;
         }
     }
 }
