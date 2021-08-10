@@ -119,14 +119,7 @@ main {
         }
     }
 }
-@media (min-width: 1400px) {
-    .wrapper {
-        &_padding-15 {
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
-}
+
 @media (min-width: 860px) {
     main {
         min-height: calc(100vh - 200px);
@@ -140,5 +133,14 @@ main {
     }
     .breadcrumbs {
         margin-top: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        &_padding-15 {
+            padding-right: 0;
+            padding-left: 0;
+        }
     }
 }
