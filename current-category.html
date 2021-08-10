@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/projects-categories-page-styles.css">
+    <link rel="stylesheet" href="src/css/current-category-page-styles.css">
 </head>
 <body>
     <header class="header" id="scroll-top-point">
@@ -167,48 +167,124 @@
                         <a href="index.html" class="breadcrumbs__list-item__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__list-item">
-                        <a class="breadcrumbs__list-item__link">Категории проектов</a>
+                        <a href="project-categories.html" class="breadcrumbs__list-item__link">Категории проектов</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item__link">Конкретная категория</a>
                     </li>
                 </ul>
             </div>
             <!-- END Breadcrumbs -->
 
-            <!-- Categories section -->
-            <section class="categories">
-                <ul class="categories-list">
-                    <li class="categories-list__item category-card">
-                        <a href="current-category.html" class="category-card__link">
-                            <img src="src/img/education.png" alt="Образование" class="category-card__icon">
-                            <span class="category-card__name">Образование</span>
-                        </a>
+            <!-- Projects section -->
+        <section class="projects">
+            <div class="projects__header">
+                <ul class="projects__states-list">
+                    <li class="projects__states-item" data-state="ready">
+                        <span class="projects__states-item__text projects__states-item__text_active">
+                            Готовые
+                        </span>
                     </li>
-                    <li class="categories-list__item category-card">
-                        <a href="current-category.html" class="category-card__link">
-                            <img src="src/img/interaction.png" alt="Взаимодействие с людьми" class="category-card__icon">
-                            <span class="category-card__name">Взаимодействие с людьми</span>
-                        </a>
+                    <li class="projects__states-item" data-state="in-work">
+                        <span class="projects__states-item__text">
+                            В работе
+                        </span>
                     </li>
-                    <li class="categories-list__item category-card">
-                        <a href="current-category.html" class="category-card__link">
-                            <img src="src/img/health.png" alt="Здоровье" class="category-card__icon">
-                            <span class="category-card__name">Здоровье</span>
-                        </a>
-                    </li>
-                    <li class="categories-list__item category-card">
-                        <a href="current-category.html" class="category-card__link">
-                            <img src="src/img/some-category.png" alt="Какая-то категория" class="category-card__icon">
-                            <span class="category-card__name">Какая-то категория</span>
-                        </a>
-                    </li>
-                    <li class="categories-list__item category-card">
-                        <a href="current-category.html" class="category-card__link">
-                            <img src="src/img/some-category.png" alt="Какая-то категория" class="category-card__icon">
-                            <span class="category-card__name">Какая-то категория</span>
-                        </a>
+                    <li class="projects__states-item" data-state="future">
+                        <span class="projects__states-item__text">
+                            Будущие
+                        </span>
                     </li>
                 </ul>
-            </section>
-            <!-- END Categories section -->
+            </div>
+            <div class="projects__list-block">
+                <div class="projects__list-block__slider">
+                    <ul class="projects__list">
+                        <li class="projects-card__wrapper">
+                            <div class="projects-card projects__list-item">
+                                <div class="projects-card__cover">
+                                    <a href="#" class="projects-card__cover-link">
+                                        <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                    </a>
+                                </div>
+                                <a class="projects-card__text" href="#">
+                                    <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                    <p class="projects-card__text-description">
+                                        Разнообразный и богатый опыт говорит нам,
+                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-card__wrapper">
+                            <div class="projects-card projects__list-item">
+                                <div class="projects-card__cover">
+                                    <a href="#" class="projects-card__cover-link">
+                                        <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                    </a>
+                                </div>
+                                <a class="projects-card__text" href="#">
+                                    <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                    <p class="projects-card__text-description">
+                                        Разнообразный и богатый опыт говорит нам,
+                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-card__wrapper">
+                            <div class="projects-card projects__list-item">
+                                <div class="projects-card__cover">
+                                    <a href="#" class="projects-card__cover-link">
+                                        <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                    </a>
+                                </div>
+                                <a class="projects-card__text" href="#">
+                                    <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                    <p class="projects-card__text-description">
+                                        Разнообразный и богатый опыт говорит нам,
+                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-card__wrapper">
+                            <div class="projects-card projects__list-item">
+                                <div class="projects-card__cover">
+                                    <a href="#" class="projects-card__cover-link">
+                                        <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                    </a>
+                                </div>
+                                <a class="projects-card__text" href="#">
+                                    <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                    <p class="projects-card__text-description">
+                                        Разнообразный и богатый опыт говорит нам,
+                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-card__wrapper">
+                            <div class="projects-card projects__list-item">
+                                <div class="projects-card__cover">
+                                    <a href="#" class="projects-card__cover-link">
+                                        <img class="projects-card__cover-image" src="./src/img/project.jpg" alt="Проект 1">
+                                    </a>
+                                </div>
+                                <a class="projects-card__text" href="#">
+                                    <h3 class="projects-card__text-title">Заголовок проекта</h3>
+                                    <p class="projects-card__text-description">
+                                        Разнообразный и богатый опыт говорит нам,
+                                        что граница обучения кадров выявляет срочную потребность стандартных подходов
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- END Projects section -->
             
             <!-- Scroll to top button -->
             <a href="#scroll-top-point" class="scroll-top-button" id="button" role="button"></a>
@@ -279,5 +355,6 @@
         </div>
     </footer>
     <script src="src/js/main.js"></script>
+    <script src="src/js/current-category-page.js"></script>
 </body>
 </html>

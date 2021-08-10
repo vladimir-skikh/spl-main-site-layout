@@ -1,0 +1,179 @@
+.projects {
+    margin: 0;
+    width: 100%;
+    &__header {
+        margin-top: 30px;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &__states {
+        &-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        &-item {
+            background-color: $white-blue-main;
+            color: $gray-opacity-05;
+            &__text {
+                display: block;
+                padding: 8px 13px;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-color: transparent;
+                &:hover {
+                    cursor: pointer;
+                }
+                &_active {
+                    background-color: $blue-main;
+                    color: $white;
+                }
+            }
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+    &__list {
+        margin: 0;
+        padding: 30px 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+    &-card {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        background: $white-blue-main;
+        box-shadow: 0px 0px 20px $black-box-shadow;
+        border-radius: 10px;
+        max-width: 213px;
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        &__cover {
+            width: 193px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            &-link {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                text-decoration: none;
+            }
+            &-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__text {
+            text-decoration: none;
+            color: inherit;
+            &-title {
+                margin: 0 0 5px;
+                padding: 0;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+            }
+            &-description {
+                margin: 0;
+                padding: 0;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1.2rem;
+                color: $black-opacity-07;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .projects {
+        &__list {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-column-gap: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .projects {
+        &__header {
+            border-top: 60px;
+        }
+        &__list {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-column-gap: 25px;
+            &-block {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .projects {
+        &__states {
+            &-list {
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            &-item {
+                border-radius: 0px;
+                &__text {
+                    padding: 10px 35px;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+        &__list {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+        }
+        &-card {
+            padding: 20px;
+            width: 100%;
+            max-width: 410px;
+            &__cover {
+                width: 100%;
+            }
+            &__text {
+                &-title {
+                    margin: 0 0 10px;
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                }
+                &-description {
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
+}
