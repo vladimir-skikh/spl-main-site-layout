@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPL</title>
+    <link rel="icon" href="src/img/icon.ico" type="image/icon type">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/projects-categories-page-styles.css">
+</head>
+<body>
+    <header class="header" id="scroll-top-point">
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <input type="checkbox" class="mobile-menu__checkbox" id="menu-checkbox" title="Открыть боковое меню">
+            <label for="menu-checkbox" class="mobile-menu__input-block">
+                <span class="mobile-menu__button"></span>
+            </label>
+            <div class="mobile-menu__background"></div>
+            <nav class="mobile-menu__content">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link menu-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link menu-link" href="about-us.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link menu-link" href="#">
+                            Наши проекты
+                        </a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link menu-link" href="news.html">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="mobile-menu__list-item">
+                        <a class="mobile-menu__link menu-link" href="#">
+                            Обратная связь
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile-menu__contacts">
+                    <ul class="mobile-menu__contacts-list">
+                        <li class="mobile-menu__contacts-item contacts-item contacts-item_phone">
+                            <a class="mobile-menu__contacts-link" href="tel:+79999999999">8 999 999 99 99</a>
+                        </li>
+                        <li class="mobile-menu__contacts-item contacts-item contacts-item_email">
+                            <a class="mobile-menu__contacts-link" href="mailto:contact@mail.ru">contact@mail.ru</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__social-links">
+                        <a href="#" class="social-link social-link_instagram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="social-link__image-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.0903 7.526V7.524C13.2577 7.524 13.4253 7.52733 13.593 7.52333C13.8083 7.518 13.9837 7.33333 13.9837 7.11767C13.9837 6.79667 13.9837 6.47533 13.9837 6.15433C13.9837 5.924 13.8013 5.741 13.5717 5.74067C13.2513 5.74067 12.931 5.74033 12.6107 5.74067C12.3813 5.741 12.1987 5.92467 12.1987 6.155C12.1983 6.47333 12.1973 6.79167 12.1997 7.11C12.2 7.15767 12.209 7.207 12.224 7.252C12.2817 7.42133 12.437 7.52533 12.627 7.52633C12.7813 7.52633 12.936 7.526 13.0903 7.526ZM10 7.939C8.872 7.93833 7.955 8.846 7.93933 9.96867C7.923 11.122 8.846 12.0357 9.95267 12.0593C11.104 12.084 12.0353 11.164 12.0597 10.045C12.0847 8.89167 11.154 7.93833 10 7.939ZM6.01533 9.03867V9.066C6.01533 10.571 6.015 12.076 6.01533 13.581C6.01533 13.7973 6.20267 13.9837 6.41933 13.9837C8.806 13.984 11.1923 13.984 13.579 13.9837C13.7977 13.9837 13.984 13.798 13.984 13.5797C13.9843 12.0767 13.984 10.573 13.984 9.07033V9.039H13.0133C13.1503 9.477 13.1923 9.92267 13.1387 10.377C13.085 10.8313 12.9383 11.254 12.7 11.6447C12.4617 12.0353 12.152 12.3597 11.7737 12.6173C10.7923 13.286 9.5 13.3447 8.45833 12.76C7.932 12.465 7.51867 12.0533 7.23 11.5223C6.80033 10.7313 6.73167 9.90067 6.98367 9.03867C6.661 9.03867 6.34033 9.03867 6.01533 9.03867ZM14.0683 15.085C14.1213 15.0763 14.1743 15.0687 14.2267 15.0573C14.642 14.969 14.9813 14.6227 15.0627 14.205C15.071 14.1593 15.0777 14.114 15.085 14.0687V5.93133C15.078 5.887 15.0717 5.842 15.0633 5.79767C14.974 5.342 14.598 4.98833 14.1367 4.925C14.1173 4.92267 14.099 4.91833 14.08 4.915H5.92033C5.87133 4.924 5.82167 4.93067 5.77333 4.94167C5.32267 5.04433 4.98933 5.407 4.925 5.86367C4.92233 5.88267 4.91833 5.90167 4.91533 5.92067V14.08C4.92467 14.1313 4.932 14.1837 4.94367 14.235C5.04333 14.6757 5.41933 15.0173 5.867 15.075C5.88833 15.0777 5.91033 15.082 5.932 15.085H14.0683ZM10 20C4.47733 20 0 15.5227 0 10C0 4.477 4.47733 0 10 0C15.5227 0 20 4.477 20 10C20 15.5227 15.5227 20 10 20Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link social-link_vk">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="social-link__image-path" d="M10 0C7.21429 0 4.71429 1.14286 2.92857 2.92857C1.14286 4.71429 0 7.21429 0 10C0 15.5 4.5 20 10 20C12.7857 20 15.2857 18.8571 17.0714 17.0714C18.8571 15.2857 20 12.7857 20 10C20 4.5 15.5 0 10 0ZM16.2143 13.8571C15.9286 13.9286 14.3571 13.8571 14.2857 13.8571C13.8571 13.8571 13.5 13.7143 13.2143 13.4286C12.8571 13.1429 12.5714 12.7857 12.2857 12.4286C12.2143 12.3571 12.0714 12.2143 12 12.1429C11.7143 11.9286 11.5 12 11.3571 12.2857C11.2857 12.5714 11.1429 13.2143 11.1429 13.2857C11.1429 13.5714 10.9286 13.7857 10.5714 13.7857C9.57143 13.8571 8.64286 13.7143 7.78571 13.2857C7.07143 12.8571 6.42857 12.3571 5.92857 11.6429C5.14286 10.5714 4.5 9.42857 3.85714 8.28572C3.85714 8.21429 3.21429 6.92857 3.21429 6.85714C3.14286 6.64286 3.21429 6.5 3.35714 6.42857C3.57143 6.42857 5.5 6.42857 5.57143 6.42857C5.85714 6.42857 6.07143 6.57143 6.21429 6.92857C6.57143 7.85714 7.07143 8.71429 7.71429 9.5C7.78571 9.57143 7.92857 9.71429 8 9.78571C8.14286 9.85714 8.28571 9.85714 8.35714 9.64286C8.42857 9.42857 8.5 9.07143 8.5 8.85714C8.5 8.35714 8.5 8 8.5 7.42857C8.5 7.07143 8.35714 6.78571 7.85714 6.71429C7.71429 6.71429 7.71429 6.57143 7.78571 6.42857C8 6.14286 8.28571 6.14286 8.57143 6.14286C9.07143 6.14286 9.57143 6.14286 10.0714 6.14286C10.2857 6.14286 10.5 6.14286 10.7143 6.21429C11 6.28571 11.1429 6.42857 11.1429 6.71429C11.1429 6.85714 11.1429 7 11.1429 7.14286C11.1429 7.71429 11.0714 8.28571 11.0714 8.85714C11.0714 9.07143 11.0714 9.28571 11.1429 9.57143C11.2143 9.85714 11.4286 9.92857 11.6429 9.71429C11.9286 9.42857 12.1429 9.14286 12.3571 8.78572C12.7857 8.21429 13.0714 7.57143 13.3571 6.85714C13.5 6.5 13.5714 6.42857 14 6.42857C14.7143 6.42857 15.3571 6.42857 16.0714 6.42857C16.2143 6.42857 16.2857 6.42857 16.4286 6.5C16.6429 6.57143 16.7143 6.71429 16.6429 6.92857C16.5714 7.35714 16.2857 7.78571 16 8.14286C15.5714 8.71429 15.1429 9.35714 14.7143 9.92857C14.6429 10 14.6429 10.0714 14.5714 10.1429C14.4286 10.4286 14.4286 10.5714 14.6429 10.8571C15 11.2143 15.4286 11.6429 15.7857 12C16.0714 12.2857 16.2857 12.5714 16.5 12.9286C16.8571 13.3571 16.7143 13.7857 16.2143 13.8571Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link social-link_telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="social-link__image-path" d="M13.5973 7.17375L7.98579 12.1737C7.91384 12.2462 7.91384 12.3187 7.91384 12.3911L7.69802 14.3477C7.69802 14.4201 7.62607 14.4201 7.55413 14.3477L6.69082 11.4491C6.61888 11.3042 6.69082 11.1593 6.83471 11.0868L13.3815 6.95636C13.5973 6.88389 13.7412 7.10128 13.5973 7.17375Z"/>
+                                <path class="social-link__image-path" d="M10 0C7.26619 0 4.7482 1.08696 2.94964 2.89855C1.15108 4.71014 0 7.24638 0 10C0 12.7536 1.07914 15.2899 2.94964 17.1014C4.7482 18.913 7.26619 20 10 20C12.7338 20 15.2518 18.913 17.0504 17.1014C18.8489 15.2899 20 12.7536 20 10C19.9281 4.49275 15.4676 0 10 0ZM15.8993 5.72464L13.8849 15.5797C13.8129 16.0145 13.2374 16.2319 12.8777 15.942L9.78417 13.6232L8.20144 15.2174C7.91367 15.5072 7.48202 15.3623 7.33813 15L6.18705 11.3768L3.16547 10.4348C2.73381 10.2899 2.73381 9.78261 3.16547 9.63768L15.1799 4.92754C15.5396 4.85507 16.0432 5.21739 15.8993 5.72464Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END Mobile menu -->
+
+        <!-- Main menu -->
+        <div class="wrapper wrapper_padding-15 header__wrapper">
+            <div class="header__menu">
+                <a href="/" class="header__logo">
+                    <img class="header__logo-image" src="./src/img/logo.png" alt="" width="49" height="54">
+                </a>
+                <nav class="header__menu-nav menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item menu__list-item_active">
+                            <a href="index.html" class="menu__link menu-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="about-us.html" class="menu__link menu-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__list-item with-sublist">
+                            <a href="#" class="menu__link menu-link">
+                                Наши проекты
+                            </a>
+                            <ul class="menu__list-item__list sublist">
+                                <span class="sublist-title">
+                                    Все категории
+                                </span>
+                                <li class="menu__list-sublist__item sublist-item">
+                                    <a href="#" class="sublist-item__link">
+                                        Категория
+                                    </a>
+                                </li>
+                                <li class="menu__list-sublist__item sublist-item">
+                                    <a href="#" class="sublist-item__link">
+                                        Категория
+                                    </a>
+                                </li>
+                                <li class="menu__list-sublist__item sublist-item">
+                                    <a href="#" class="sublist-item__link">
+                                        Категория
+                                    </a>
+                                </li>
+                                <li class="menu__list-sublist__item sublist-item">
+                                    <a href="#" class="sublist-item__link">
+                                        Категория
+                                    </a>
+                                </li>
+                                <li class="menu__list-sublist__item sublist-item">
+                                    <a href="#" class="sublist-item__link">
+                                        Категория
+                                    </a>
+                                </li>
+                                <li class="menu__list-sublist__item sublist-item">
+                                    <a href="#" class="sublist-item__link">
+                                        Категория
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="news.html" class="menu__link menu-link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__link menu-link">
+                                Обратная связь
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- END Main menu -->
+
+    </header>
+    <main class="main">
+        <div class="wrapper wrapper_center wrapper_padding-15">
+
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item__link">Категории проектов</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Breadcrumbs -->
+
+            <!-- Categories section -->
+            <section class="categories">
+                <ul class="categories-list">
+                    <li class="categories-list__item category-card">
+                        <a href="#" class="category-card__link">
+                            <img src="src/img/education.png" alt="Образование" class="category-card__icon">
+                            <span class="category-card__name">Образование</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="#" class="category-card__link">
+                            <img src="src/img/interaction.png" alt="Взаимодействие с людьми" class="category-card__icon">
+                            <span class="category-card__name">Взаимодействие с людьми</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="#" class="category-card__link">
+                            <img src="src/img/health.png" alt="Здоровье" class="category-card__icon">
+                            <span class="category-card__name">Здоровье</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="#" class="category-card__link">
+                            <img src="src/img/some-category.png" alt="Какая-то категория" class="category-card__icon">
+                            <span class="category-card__name">Какая-то категория</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="#" class="category-card__link">
+                            <img src="src/img/some-category.png" alt="Какая-то категория" class="category-card__icon">
+                            <span class="category-card__name">Какая-то категория</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- END Categories section -->
+            
+            <!-- Scroll to top button -->
+            <a href="#scroll-top-point" class="scroll-top-button" id="button" role="button"></a>
+            <!-- END Scroll to top button -->
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper wrapper_padding-15">
+            <div class="footer__wrapper">
+                <div class="footer__column footer__column_left">
+                    <div class="footer__logo">
+                        <img class="footer__logo-image" src="./src/img/logo.png" alt="" width="35" height="40">
+                    </div>
+                    <div class="footer__social-links">
+                        <a href="#" class="footer__social-links__link social-link social-link_instagram">
+                            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="social-link__image-path" fill-rule="evenodd" clip-rule="evenodd" d="M13.0903 7.526V7.524C13.2577 7.524 13.4253 7.52733 13.593 7.52333C13.8083 7.518 13.9837 7.33333 13.9837 7.11767C13.9837 6.79667 13.9837 6.47533 13.9837 6.15433C13.9837 5.924 13.8013 5.741 13.5717 5.74067C13.2513 5.74067 12.931 5.74033 12.6107 5.74067C12.3813 5.741 12.1987 5.92467 12.1987 6.155C12.1983 6.47333 12.1973 6.79167 12.1997 7.11C12.2 7.15767 12.209 7.207 12.224 7.252C12.2817 7.42133 12.437 7.52533 12.627 7.52633C12.7813 7.52633 12.936 7.526 13.0903 7.526ZM10 7.939C8.872 7.93833 7.955 8.846 7.93933 9.96867C7.923 11.122 8.846 12.0357 9.95267 12.0593C11.104 12.084 12.0353 11.164 12.0597 10.045C12.0847 8.89167 11.154 7.93833 10 7.939ZM6.01533 9.03867V9.066C6.01533 10.571 6.015 12.076 6.01533 13.581C6.01533 13.7973 6.20267 13.9837 6.41933 13.9837C8.806 13.984 11.1923 13.984 13.579 13.9837C13.7977 13.9837 13.984 13.798 13.984 13.5797C13.9843 12.0767 13.984 10.573 13.984 9.07033V9.039H13.0133C13.1503 9.477 13.1923 9.92267 13.1387 10.377C13.085 10.8313 12.9383 11.254 12.7 11.6447C12.4617 12.0353 12.152 12.3597 11.7737 12.6173C10.7923 13.286 9.5 13.3447 8.45833 12.76C7.932 12.465 7.51867 12.0533 7.23 11.5223C6.80033 10.7313 6.73167 9.90067 6.98367 9.03867C6.661 9.03867 6.34033 9.03867 6.01533 9.03867ZM14.0683 15.085C14.1213 15.0763 14.1743 15.0687 14.2267 15.0573C14.642 14.969 14.9813 14.6227 15.0627 14.205C15.071 14.1593 15.0777 14.114 15.085 14.0687V5.93133C15.078 5.887 15.0717 5.842 15.0633 5.79767C14.974 5.342 14.598 4.98833 14.1367 4.925C14.1173 4.92267 14.099 4.91833 14.08 4.915H5.92033C5.87133 4.924 5.82167 4.93067 5.77333 4.94167C5.32267 5.04433 4.98933 5.407 4.925 5.86367C4.92233 5.88267 4.91833 5.90167 4.91533 5.92067V14.08C4.92467 14.1313 4.932 14.1837 4.94367 14.235C5.04333 14.6757 5.41933 15.0173 5.867 15.075C5.88833 15.0777 5.91033 15.082 5.932 15.085H14.0683ZM10 20C4.47733 20 0 15.5227 0 10C0 4.477 4.47733 0 10 0C15.5227 0 20 4.477 20 10C20 15.5227 15.5227 20 10 20Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-links__link social-link social-link_vk">
+                            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="social-link__image-path" d="M10 0C7.21429 0 4.71429 1.14286 2.92857 2.92857C1.14286 4.71429 0 7.21429 0 10C0 15.5 4.5 20 10 20C12.7857 20 15.2857 18.8571 17.0714 17.0714C18.8571 15.2857 20 12.7857 20 10C20 4.5 15.5 0 10 0ZM16.2143 13.8571C15.9286 13.9286 14.3571 13.8571 14.2857 13.8571C13.8571 13.8571 13.5 13.7143 13.2143 13.4286C12.8571 13.1429 12.5714 12.7857 12.2857 12.4286C12.2143 12.3571 12.0714 12.2143 12 12.1429C11.7143 11.9286 11.5 12 11.3571 12.2857C11.2857 12.5714 11.1429 13.2143 11.1429 13.2857C11.1429 13.5714 10.9286 13.7857 10.5714 13.7857C9.57143 13.8571 8.64286 13.7143 7.78571 13.2857C7.07143 12.8571 6.42857 12.3571 5.92857 11.6429C5.14286 10.5714 4.5 9.42857 3.85714 8.28572C3.85714 8.21429 3.21429 6.92857 3.21429 6.85714C3.14286 6.64286 3.21429 6.5 3.35714 6.42857C3.57143 6.42857 5.5 6.42857 5.57143 6.42857C5.85714 6.42857 6.07143 6.57143 6.21429 6.92857C6.57143 7.85714 7.07143 8.71429 7.71429 9.5C7.78571 9.57143 7.92857 9.71429 8 9.78571C8.14286 9.85714 8.28571 9.85714 8.35714 9.64286C8.42857 9.42857 8.5 9.07143 8.5 8.85714C8.5 8.35714 8.5 8 8.5 7.42857C8.5 7.07143 8.35714 6.78571 7.85714 6.71429C7.71429 6.71429 7.71429 6.57143 7.78571 6.42857C8 6.14286 8.28571 6.14286 8.57143 6.14286C9.07143 6.14286 9.57143 6.14286 10.0714 6.14286C10.2857 6.14286 10.5 6.14286 10.7143 6.21429C11 6.28571 11.1429 6.42857 11.1429 6.71429C11.1429 6.85714 11.1429 7 11.1429 7.14286C11.1429 7.71429 11.0714 8.28571 11.0714 8.85714C11.0714 9.07143 11.0714 9.28571 11.1429 9.57143C11.2143 9.85714 11.4286 9.92857 11.6429 9.71429C11.9286 9.42857 12.1429 9.14286 12.3571 8.78572C12.7857 8.21429 13.0714 7.57143 13.3571 6.85714C13.5 6.5 13.5714 6.42857 14 6.42857C14.7143 6.42857 15.3571 6.42857 16.0714 6.42857C16.2143 6.42857 16.2857 6.42857 16.4286 6.5C16.6429 6.57143 16.7143 6.71429 16.6429 6.92857C16.5714 7.35714 16.2857 7.78571 16 8.14286C15.5714 8.71429 15.1429 9.35714 14.7143 9.92857C14.6429 10 14.6429 10.0714 14.5714 10.1429C14.4286 10.4286 14.4286 10.5714 14.6429 10.8571C15 11.2143 15.4286 11.6429 15.7857 12C16.0714 12.2857 16.2857 12.5714 16.5 12.9286C16.8571 13.3571 16.7143 13.7857 16.2143 13.8571Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-links__link social-link social-link_telegram">
+                            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="social-link__image-path" d="M13.5973 7.17375L7.98579 12.1737C7.91384 12.2462 7.91384 12.3187 7.91384 12.3911L7.69802 14.3477C7.69802 14.4201 7.62607 14.4201 7.55413 14.3477L6.69082 11.4491C6.61888 11.3042 6.69082 11.1593 6.83471 11.0868L13.3815 6.95636C13.5973 6.88389 13.7412 7.10128 13.5973 7.17375Z"/>
+                                <path class="social-link__image-path" d="M10 0C7.26619 0 4.7482 1.08696 2.94964 2.89855C1.15108 4.71014 0 7.24638 0 10C0 12.7536 1.07914 15.2899 2.94964 17.1014C4.7482 18.913 7.26619 20 10 20C12.7338 20 15.2518 18.913 17.0504 17.1014C18.8489 15.2899 20 12.7536 20 10C19.9281 4.49275 15.4676 0 10 0ZM15.8993 5.72464L13.8849 15.5797C13.8129 16.0145 13.2374 16.2319 12.8777 15.942L9.78417 13.6232L8.20144 15.2174C7.91367 15.5072 7.48202 15.3623 7.33813 15L6.18705 11.3768L3.16547 10.4348C2.73381 10.2899 2.73381 9.78261 3.16547 9.63768L15.1799 4.92754C15.5396 4.85507 16.0432 5.21739 15.8993 5.72464Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_center">
+                    <ul class="footer__links-list">
+                        <li class="footer__links-list__item">
+                            <a class="footer__link" href="about-us.html">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer__links-list__item">
+                            <a class="footer__link" href="#">
+                                Наши проекты
+                            </a>
+                        </li>
+                        <li class="footer__links-list__item">
+                            <a class="footer__link" href="news.html">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__links-list__item">
+                            <a class="footer__link" href="#">
+                                Достижения
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column footer__column_right">
+                    <ul class="footer__links-list">
+                        <li class="footer__links-list__item">
+                            <a class="footer__link" href="tel:+79999999999">8 999 999 99 99</a>
+                        </li>
+                        <li class="footer__links-list__item">
+                            <a class="footer__link" href="mailto:">contact@mail.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
