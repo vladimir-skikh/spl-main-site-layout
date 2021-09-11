@@ -1246,6 +1246,7 @@ html, body {
   font-size: 10px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #2B2C34;
+  scroll-behavior: smooth;
 }
 
 main {

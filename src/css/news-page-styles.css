@@ -1163,7 +1163,6 @@
     color: rgba(43, 44, 52, 0.5);
     position: relative;
     border-radius: 0;
-    z-index: -1;
   }
   .news__footer-link::after {
     content: '';
@@ -1294,6 +1293,7 @@ html, body {
   font-size: 10px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #2B2C34;
+  scroll-behavior: smooth;
 }
 
 main {
