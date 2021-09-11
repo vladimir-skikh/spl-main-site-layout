@@ -50,12 +50,12 @@ document.addEventListener('touchmove', handleTouchMove, false);
 
 const scrollToTop = (evt) => {
     window.scrollTo({
-        top: 0,
+        top     : 0,
         behavior: "smooth"
     });
 }
 
-const scroll_top_button = document.getElementById('button');
+const scroll_top_button = document.getElementById('scroll-top-button');
 scroll_top_button.addEventListener('click', scrollToTop);
 
 window.addEventListener('scroll', () => {
