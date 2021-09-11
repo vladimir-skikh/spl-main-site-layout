@@ -1014,7 +1014,7 @@
 
 @media screen and (min-width: 1000px) {
   .project-stages {
-    background: no-repeat url("../../../src/img/stages-illustration.jpg");
+    background: no-repeat url("../../src/img/stages-illustration.jpg");
     background-position: right bottom;
     background-size: 50% auto;
   }
