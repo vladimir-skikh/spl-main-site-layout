@@ -337,6 +337,38 @@
     }
 }
 
+// Видео на сайте TODO @project-video
+/* .video {
+    position: relative;
+    display: none;
+    width: 242px;
+    height: 154px;
+    &__wrapper {
+        position: relative;
+        max-width: 600px;
+        min-height: 320px;
+        margin: 0;
+    }
+    &__poster {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 320px;
+        background: url('../../images/video-poster.png') no-repeat center;
+        background-size: contain;
+    }
+    &__button {
+        transition: 0.3s;
+        &:hover {
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+} */
+
 @media (min-width: 1600px) {
     .scroll-top-button {
         bottom: 50px;
