@@ -1,4 +1,4 @@
-// ссылки на соц сети
+// Ссылки на соц сети
 .social-link {
     margin-right: 10px;
     text-decoration: none;
@@ -14,7 +14,7 @@
     }
 }
 
-// кнопка - ссылка
+// Кнопка - ссылка
 .link_button {
     color: $white;
     padding: 10px 30px;
@@ -59,7 +59,7 @@
     }
 }
 
-// стили для формы
+// Форма
 .form {
     &-group {
         &__input {
@@ -119,7 +119,7 @@
     }
 }
 
-// стили для кнопки
+// Кнопка
 .button {
     color: $white;
     padding: 10px 25px;
@@ -137,7 +137,7 @@
     }
 }
 
-// для спсика с подсписком
+// Список с подсписком
 .with-sublist {
     position: relative;
     &::after {
@@ -154,7 +154,7 @@
     }
 }
 
-// Заголовок старницы
+// Заголовок страницы
 .page-title {
     font-weight: normal;
     font-size: 3.6rem;
@@ -290,46 +290,7 @@
     color: $gray-opacity-05;
 }
 
-// кнопка наверх
-/* .scroll-top-button {
-    text-decoration: none;
-    position: absolute;
-    display: block;
-    
-    &::before, &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        padding: 2px 6px;
-        border-radius: 10px;
-        background-color: $blue-main;
-        transform: translateY(-50%);
-    }
-    &:hover {
-        &::before, &::after {
-            background-color: $blue-main-hover;
-        } 
-    }
-    &:focus {
-        &::before, &::after {
-            background-color: $blue-main-focus;
-        } 
-    }
-    &_left {
-        &::before {
-            left: 2px;
-            transform-origin: left bottom;
-            transform: translateY(-1px) rotate(-45deg);
-        }
-        &::after {
-            left: 2px;
-            transform-origin: left top;
-            transform: translateY(-2px) rotate(45deg);
-        }
-    }
-} */
-
+// Кнопка наверх
 .scroll-top-button {
     display: block;
     background-color: $blue-main;
@@ -375,6 +336,38 @@
         visibility: visible;
     }
 }
+
+// Видео на сайте TODO @project-video
+/* .video {
+    position: relative;
+    display: none;
+    width: 242px;
+    height: 154px;
+    &__wrapper {
+        position: relative;
+        max-width: 600px;
+        min-height: 320px;
+        margin: 0;
+    }
+    &__poster {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 320px;
+        background: url('../../images/video-poster.png') no-repeat center;
+        background-size: contain;
+    }
+    &__button {
+        transition: 0.3s;
+        &:hover {
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+} */
 
 @media (min-width: 1600px) {
     .scroll-top-button {

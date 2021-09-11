@@ -7,6 +7,7 @@ html, body {
     font-size: 10px;
     font-family: 'Roboto', 'Arial', sans-serif;
     color: $black-main;
+    scroll-behavior: smooth;
 }
 main {
     min-height: calc(100vh - 60px);
@@ -49,8 +50,10 @@ main {
         margin: 0;
         padding: 0;
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         &-item {
+            margin-bottom: 10px;
             &__link {
                 display: block;
                 font-size: 1.4rem;
@@ -59,6 +62,9 @@ main {
                 font-weight: 400;
                 text-decoration: none;
                 text-transform: capitalize;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
             &:not(:last-child) {
                 margin-right: 10px;
@@ -119,14 +125,7 @@ main {
         }
     }
 }
-@media (min-width: 1400px) {
-    .wrapper {
-        &_padding-15 {
-            padding-right: 0;
-            padding-left: 0;
-        }
-    }
-}
+
 @media (min-width: 860px) {
     main {
         min-height: calc(100vh - 200px);
@@ -140,5 +139,14 @@ main {
     }
     .breadcrumbs {
         margin-top: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        &_padding-15 {
+            padding-right: 0;
+            padding-left: 0;
+        }
     }
 }

@@ -341,44 +341,6 @@
   color: rgba(43, 44, 52, 0.5);
 }
 
-/* .scroll-top-button {
-    text-decoration: none;
-    position: absolute;
-    display: block;
-    
-    &::before, &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        padding: 2px 6px;
-        border-radius: 10px;
-        background-color: $blue-main;
-        transform: translateY(-50%);
-    }
-    &:hover {
-        &::before, &::after {
-            background-color: $blue-main-hover;
-        } 
-    }
-    &:focus {
-        &::before, &::after {
-            background-color: $blue-main-focus;
-        } 
-    }
-    &_left {
-        &::before {
-            left: 2px;
-            transform-origin: left bottom;
-            transform: translateY(-1px) rotate(-45deg);
-        }
-        &::after {
-            left: 2px;
-            transform-origin: left top;
-            transform: translateY(-2px) rotate(45deg);
-        }
-    }
-} */
 .scroll-top-button {
   display: block;
   background-color: #285BD4;
@@ -1465,7 +1427,6 @@
     padding-right: 25px;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    z-index: -1;
   }
   .news-card__meta__read-more::after {
     content: '';
@@ -1485,7 +1446,6 @@
     color: rgba(43, 44, 52, 0.5);
     position: relative;
     border-radius: 0;
-    z-index: -1;
   }
   .news__footer-link::after {
     content: '';
@@ -1865,6 +1825,7 @@ html, body {
   font-size: 10px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #2B2C34;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -1924,7 +1885,13 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
+}
+
+.breadcrumbs__list-item {
+  margin-bottom: 10px;
 }
 
 .breadcrumbs__list-item__link {
@@ -1935,6 +1902,10 @@ main {
   font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.breadcrumbs__list-item__link:hover {
+  text-decoration: underline;
 }
 
 .breadcrumbs__list-item:not(:last-child) {
@@ -1994,13 +1965,6 @@ main {
   }
 }
 
-@media (min-width: 1400px) {
-  .wrapper_padding-15 {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 @media (min-width: 860px) {
   main {
     min-height: calc(100vh - 200px);
@@ -2012,5 +1976,12 @@ main {
   }
   .breadcrumbs {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper_padding-15 {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

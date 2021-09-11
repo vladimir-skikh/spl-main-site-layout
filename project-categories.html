@@ -7,16 +7,13 @@
     <title>SPL</title>
     <link rel="icon" href="src/img/icon.ico" type="image/icon type">
 
-    <link rel="stylesheet" href="src/css/libs/bvselect.css" />
-    <link rel="stylesheet" href="src/css/libs/glide.core.css" />
-    <link rel="stylesheet" href="src/css/libs/glide.theme.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/aboutus-page-styles.css">
+    <link rel="stylesheet" href="src/css/projects-categories-page-styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="scroll-top-point">
 
         <!-- Mobile menu -->
         <div class="mobile-menu">
@@ -170,99 +167,53 @@
                         <a href="index.html" class="breadcrumbs__list-item__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__list-item">
-                        <a class="breadcrumbs__list-item__link">О нас</a>
+                        <a class="breadcrumbs__list-item__link">Категории проектов</a>
                     </li>
                 </ul>
             </div>
             <!-- END Breadcrumbs -->
 
-            <!-- Page title -->
-            <h1 class="page-title">
-                О нас
-            </h1>
-            <!-- END Page title -->
-
-            <div class="about-us__main-screen">
-                <p class="about-us__text">
-                    Товарищи! сложившаяся структура организации способствует подготовки и реализации модели развития. Задача организации, в особенности же
-                    постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки системы
-                    обучения кадров, соответствует насущным потребностям.
-                    <br/>
-                    <br/>
-                    Повседневная практика показывает, что новая модель организационной деятельности требуют определения и уточнения существенных финансовых
-                    и административных условий. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий представляет собой
-                    интересный эксперимент проверки форм развития. Разнообразный и богатый опыт сложившаяся структура организации требуют от нас анализа
-                    существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что начало повседневной работы по
-                    формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
-                    <br/>
-                    <br/>
-                    Таким образом постоянный количественный рост и сфера нашей активности требуют от нас анализа направлений прогрессивного развития.
-                    С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем
-                    массового участия
-                </p>
-
-                <!-- Video -->
-                <div class="video-block">
-                    <div class="video">
-                        <video class="video__source" controls="controls" preload="auto">
-                            <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-                            <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
-                            <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
-                        </video>
-                        <img src="src/img/video-cover.jpg" class="video__cover">
-                        <img src="src/img/video-play.svg" alt="Воспроизвести видео" class="video__button" role="button" tabindex="1">
-                    </div>            
-                </div>
-                <!-- END Video -->
-
-            </div>
+            <!-- Categories section -->
+            <section class="categories">
+                <ul class="categories-list">
+                    <li class="categories-list__item category-card">
+                        <a href="current-category.html" class="category-card__link">
+                            <img src="src/img/education.png" alt="Образование" class="category-card__icon">
+                            <span class="category-card__name">Образование</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="current-category.html" class="category-card__link">
+                            <img src="src/img/interaction.png" alt="Взаимодействие с людьми" class="category-card__icon">
+                            <span class="category-card__name">Взаимодействие с людьми</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="current-category.html" class="category-card__link">
+                            <img src="src/img/health.png" alt="Здоровье" class="category-card__icon">
+                            <span class="category-card__name">Здоровье</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="current-category.html" class="category-card__link">
+                            <img src="src/img/some-category.png" alt="Какая-то категория" class="category-card__icon">
+                            <span class="category-card__name">Какая-то категория</span>
+                        </a>
+                    </li>
+                    <li class="categories-list__item category-card">
+                        <a href="current-category.html" class="category-card__link">
+                            <img src="src/img/some-category.png" alt="Какая-то категория" class="category-card__icon">
+                            <span class="category-card__name">Какая-то категория</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- END Categories section -->
+            
+            <!-- Scroll to top button -->
+            <a href="#scroll-top-point" class="scroll-top-button" id="button" role="button"></a>
+            <!-- END Scroll to top button -->
         </div>
-
-        <!-- About us colored section -->
-        <section class="about-us__colored">
-            <div class="wrapper wrapper_center wrapper_padding-15">
-
-                <p class="about-us__text">
-                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное формационно пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
-                    <br/>
-                    <br/>
-                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений
-                </p>
-    
-                <div class="about-us__image-block">
-                    <img class="about-us__image" src="src/img/about-us-1.jpg" alt="О нас 1">
-                </div>
-    
-                <p class="about-us__text">
-                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
-                    <br/>
-                    <br/>
-                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений
-                    <br/>
-                    <br/>
-                    Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития
-                </p>
-    
-                <div class="about-us__image-block">
-                    <img class="about-us__image" src="src/img/about-us-2.jpg" alt="О нас 2">
-                </div>
-    
-                <p class="about-us__text">
-                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
-                    <br/>
-                    <br/>
-                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
-                    <br/>
-                    <br/>
-                    Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития
-                </p>
-            </div>
-        </section>
-        <!-- END About us colored section -->
-
-        <!-- Scroll to top button -->
-        <a href="#scroll-top-point" class="scroll-top-button" id="button" role="button"></a>
-        <!-- END Scroll to top button -->
     </main>
     <footer class="footer">
         <div class="wrapper wrapper_padding-15">
@@ -328,6 +279,5 @@
         </div>
     </footer>
     <script src="src/js/main.js"></script>
-    <script src="src/js/aboutus-page.js"></script>
 </body>
 </html>

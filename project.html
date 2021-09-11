@@ -7,16 +7,13 @@
     <title>SPL</title>
     <link rel="icon" href="src/img/icon.ico" type="image/icon type">
 
-    <link rel="stylesheet" href="src/css/libs/bvselect.css" />
-    <link rel="stylesheet" href="src/css/libs/glide.core.css" />
-    <link rel="stylesheet" href="src/css/libs/glide.theme.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="src/css/aboutus-page-styles.css">
+    <link rel="stylesheet" href="src/css/project-page-styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="scroll-top-point">
 
         <!-- Mobile menu -->
         <div class="mobile-menu">
@@ -48,7 +45,7 @@
                         </a>
                     </li>
                     <li class="mobile-menu__list-item">
-                        <a class="mobile-menu__link menu-link" href="index.html#feedback-section">
+                        <a class="mobile-menu__link menu-link" href="#">
                             Обратная связь
                         </a>
                     </li>
@@ -149,7 +146,7 @@
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="index.html#feedback-section" class="menu__link menu-link">
+                            <a href="#" class="menu__link menu-link">
                                 Обратная связь
                             </a>
                         </li>
@@ -170,99 +167,199 @@
                         <a href="index.html" class="breadcrumbs__list-item__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__list-item">
-                        <a class="breadcrumbs__list-item__link">О нас</a>
+                        <a href="project-categories.html" class="breadcrumbs__list-item__link">Категории проектов</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="current-category.html" class="breadcrumbs__list-item__link">Конкретная категория</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a class="breadcrumbs__list-item__link">Образовательный проект 1</a>
                     </li>
                 </ul>
             </div>
             <!-- END Breadcrumbs -->
 
-            <!-- Page title -->
-            <h1 class="page-title">
-                О нас
-            </h1>
-            <!-- END Page title -->
+            <!-- Project title -->
+            <h1 class="page-title">Заговок проекта</h1>
+            <!-- END Project title -->
 
-            <div class="about-us__main-screen">
-                <p class="about-us__text">
-                    Товарищи! сложившаяся структура организации способствует подготовки и реализации модели развития. Задача организации, в особенности же
-                    постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки системы
-                    обучения кадров, соответствует насущным потребностям.
-                    <br/>
-                    <br/>
-                    Повседневная практика показывает, что новая модель организационной деятельности требуют определения и уточнения существенных финансовых
-                    и административных условий. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий представляет собой
-                    интересный эксперимент проверки форм развития. Разнообразный и богатый опыт сложившаяся структура организации требуют от нас анализа
-                    существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что начало повседневной работы по
-                    формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
-                    <br/>
-                    <br/>
-                    Таким образом постоянный количественный рост и сфера нашей активности требуют от нас анализа направлений прогрессивного развития.
-                    С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки систем
-                    массового участия
-                </p>
-
-                <!-- Video -->
-                <div class="video-block">
-                    <div class="video">
-                        <video class="video__source" controls="controls" preload="auto">
-                            <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-                            <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
-                            <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
-                        </video>
-                        <img src="src/img/video-cover.jpg" class="video__cover">
-                        <img src="src/img/video-play.svg" alt="Воспроизвести видео" class="video__button" role="button" tabindex="1">
+            <!-- Project description section -->
+            <section class="project-description">
+                <!-- TODO @project-video -->
+                <!--<div class="video__wrapper">
+                    <video class="video" controls="controls" preload="auto">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'/>
+                        <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm'/>
+                        <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg'/>
+                    </video>
+                    <div class="video__poster">
+                        <img src="src/img/video-play.jpg" alt="Воспроизвести видео" class="video__button">
                     </div>            
-                </div>
-                <!-- END Video -->
+                </div>-->
 
-            </div>
+                <p class="project-description__text">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                    <br/>
+                    <br/>
+                    Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                    <br/>
+                    <br/>
+                    В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum"
+                    ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая
+                    строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32  Классический текст Lorem Ipsum, используемый
+                    с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод.
+                </p>
+            </section>
+            <!-- END Project description section -->
+
+            <!-- Project's stages section -->
+            <section class="project-stages">
+                <ul class="stages-list">
+                    <li class="stages-list__item stage">
+                        <span class="stage-title">Название этапа</span>
+                        <p class="stage-description">
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                        </p>
+                    </li>
+                    <li class="stages-list__item stage">
+                        <span class="stage-title">Название этапа</span>
+                        <p class="stage-description">
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                        </p>
+                    </li>
+                    <li class="stages-list__item stage">
+                        <span class="stage-title">Название этапа</span>
+                        <p class="stage-description">
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                        </p>
+                    </li>
+                    <li class="stages-list__item stage">
+                        <span class="stage-title">Название этапа</span>
+                        <p class="stage-description">
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                        </p>
+                    </li>
+                    <li class="stages-list__item stage stage_active stage_last">
+                        <span class="stage-title">Название этапа</span>
+                        <p class="stage-description">
+                            Краткое описание этапа. Цели, задачи и пути реализации.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <!-- END Project's stages section -->
+
+            <!-- Project's other info -->
+            <section class="project-other-info">
+                <p class="other-info__text">
+                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
+                    <br/>
+                    <br/>
+                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений
+                </p>
+                <div class="other-info__image-block">
+                    <img class="other-info__image" src="src/img/project-image-1.png" alt="Обсуждение новых идей (фото Иванова Ивана, 3 курс)">
+                </div>
+                <p class="other-info__text">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн
+                    <br/>
+                    <br/>
+                    Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов
+                    в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.
+                </p>
+                <div class="other-info__image-block">
+                    <img class="other-info__image" src="src/img/project-image-2.png" alt="Выступление на конференции (фото Иванова Ивана, 3 курс)">
+                </div>
+                <p class="other-info__text">
+                    Идейные соображения высшего порядка, а также сложившаяся структура организации требуют определения и уточнения дальнейших направлений развития. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений.
+                    <br/>
+                    <br/>
+                    Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Равным образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения соответствующий условий активизации. Таким образом новая модель организационной деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                    <br/>
+                    <br/>
+                    Равным образом реализация намеченных плановых заданий позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании существенных финансовых и административных условий.
+                </p>
+            </section>
+            <!-- END Project's other info -->
+            
+            <!-- Scroll to top button -->
+            <a href="#scroll-top-point" class="scroll-top-button" id="button" role="button"></a>
+            <!-- END Scroll to top button -->
         </div>
 
-        <!-- About us colored section -->
-        <section class="about-us__colored">
+        <!-- Project's team section -->
+        <section class="project-team">
             <div class="wrapper wrapper_center wrapper_padding-15">
+                <h2 class="section-title project-team__title">
+                    Участники проекта
+                </h2>
 
-                <p class="about-us__text">
-                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное формационно пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
-                    <br/>
-                    <br/>
-                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений
-                </p>
-    
-                <div class="about-us__image-block">
-                    <img class="about-us__image" src="src/img/about-us-1.jpg" alt="О нас 1">
-                </div>
-    
-                <p class="about-us__text">
-                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
-                    <br/>
-                    <br/>
-                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений
-                    <br/>
-                    <br/>
-                    Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития
-                </p>
-    
-                <div class="about-us__image-block">
-                    <img class="about-us__image" src="src/img/about-us-2.jpg" alt="О нас 2">
-                </div>
-    
-                <p class="about-us__text">
-                    Равным образом новая модель организационной деятельности позволяет оценить значение модели развития. Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития.
-                    <br/>
-                    <br/>
-                    Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа новых предложений. С другой стороны укрепление и развитие структуры влечет за собой процесс внедрения и модернизации новых предложений.
-                    <br/>
-                    <br/>
-                    Равным образом начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации модели развития. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки модели развития
-                </p>
+                <ul class="team-list">
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                    <li class="team-member">
+                        <div class="team-member__avatar-wrapper">
+                            <img class="team-member__avatar" src="src/img/team-member.png" alt="Участник 1">
+                        </div>
+                        <span class="team-member__name">Иванов Иван Иванович</span>
+                        <span class="team-member__role">Руководитель</span>
+                    </li>
+                </ul>
             </div>
         </section>
-        <!-- END About us colored section -->
+        <!-- END Project's team section -->
 
-        <!-- Scroll to top button -->
-        <a href="#scroll-top-point" class="scroll-top-button" id="button" role="button"></a>
-        <!-- END Scroll to top button -->
     </main>
     <footer class="footer">
         <div class="wrapper wrapper_padding-15">
@@ -328,6 +425,5 @@
         </div>
     </footer>
     <script src="src/js/main.js"></script>
-    <script src="src/js/aboutus-page.js"></script>
 </body>
 </html>

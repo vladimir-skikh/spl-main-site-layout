@@ -5,8 +5,7 @@ var xDown = null;
 var yDown = null;
 
 const getTouches = (evt) => {
-  return evt.touches ||             // browser API
-         evt.originalEvent.touches; // jQuery
+    return evt.touches;
 }                                                     
 
 const handleTouchStart = (evt) => {
@@ -70,3 +69,20 @@ window.addEventListener('scroll', () => {
         scroll_top_button.classList.remove('show');
     }
 });
+
+/** TODO @project-video */
+/* document.addEventListener('DOMContentLoaded', () => {
+    let video_buttons = document.querySelectorAll('.video__button');
+
+    if (video_buttons.length) {
+        video_buttons.forEach( button => {
+            button.addEventListener('click', (e) => {
+                let poster = e.target.parentNode;
+                let video  = e.target.parentNode.parentNode;
+                poster.style.display = none;
+
+
+            });
+        });
+    }
+}); */

@@ -1,0 +1,58 @@
+.project {
+    &-description {
+        &__text {
+            margin: 0;
+            padding: 0;
+            font-weight: 300;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: $black-main;
+        }
+        margin-bottom: 20px;
+    }
+    &-stages {
+        background: none;
+        margin-bottom: 20px;
+    }
+    &-other-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &-team {
+        background-color: $white-blue-main;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .project {
+        &-description {
+            margin-bottom: 60px;
+            &__text {
+                padding: 0;
+                font-weight: 300;
+                font-size: 1.8rem;
+                line-height: 3rem;
+                color: $black-main;
+            }
+            margin-bottom: 60px;
+        }
+        &-stages {
+            margin-bottom: 120px;
+        }
+        &-other-info {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .project {
+        &-stages {
+            background: no-repeat url('../../../src/img/stages-illustration.jpg');
+            background-position: right bottom;
+            background-size: 50% auto;
+        }
+    }
+}
